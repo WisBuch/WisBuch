@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Unggoy At Paru-Paro</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .kids6 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Ang Unggoy At Paru-Paro')">+</button>
+   </div>
+
+   <div class="kids6">
+    <h1>Ang Unggoy At Paru-Paro</h1>
+    <h2>(Maikling Kuwento)</h2>
+    <h2>by: Jim Lloyd</h2> <br> <br>
+    <p><span class="first-letter">I</span>sang araw, sa taas ng puno na malapit sa bundok, pinagmasdan ni Unggoy ang kanyang paboritong bulaklak habang kumakain ng saging.
+    </p> <br>
+
+    <p>“Ang ganda-ganda talaga ng bulaklak na iyon. Gusto ko siyang pagmasdan araw-araw,” wika ni Unggoy sa kanyang sarili.
+    </p> <br>
+
+    <p>Pagkatapos niyang kumain ng saging, itinapon ni Unggoy ang balat ng saging sa lupa at humiga sa kanyang sanga. Nakita ito ni Paru-paro at linapitan niya si Unggoy.
+    </p> <br>
+
+    <p>“Unggoy napansin kong nahulog mo ang balat ng saging na iyong kinain sa lupa.”</p> <br>
+
+    <p>Ang wika naman ni Unggoy, “Naku sadya iyan Paru-paro. Lagi kong itinatapon ang mga pagkain ko sa lupa.</p> <br>
+
+    <p>“Kaya pala ang daming basura dito. Hindi mo dapat basta-basta na lamang tinatapon ang mga basura mo kung saan-saan lamang Unggoy. Maari kang makadulot ng trahedya. 
+        Meron namang mga basurahang malapit dito ah. Doon mo nalang itapon ang mga basura mo,” paliwanag ni Paru-paro.</p> <br>
+
+    <p>"Hay nako Paru-paro, tigilan mo nga ako! Ang tagal-tagal ko ng ginagawa yan ah, wala namang nangyayaring masama,” galit na sagot ni Unggoy. 
+       “Umalis kana nga, sinisira mo araw ko,” dagdag pa nito.</p> <br>
+
+    <p>Lumipad si Paru-paro ng walang imik. Isang madilim na gabi habang natutulog si Unggoy sa taas ng kanyang puno, ay biglang bumuhos ang malakas na ulan. 
+       Hindi niya ito pinansin at sinusubukan muling matulog. Ngunit sa halip na makatulog ay napatayo pa si Unggoy dahilan sa may bigla siyang narinig na malakas natunog. 
+       Nagsimulang manginig ang kanyang puno at muntikan na siyang mahulog. Napatalikod siya at nabigla na lamang sa kanyang nakita. Lupang bumubuhos pababa mula sa bundok.
+    </p> <br>
+
+    <p>“Isang landslide!” Walang magawa si Unggoy kung hindi sumigaw. “Tulong! Tulungan ninyo ako,” sigaw niya. Tumumba ang kanyang puno at nahimatay si Unggoy.
+    </p> <br>
+
+    <p>“Ito ang resulta ng pagtatapon mo ng mga basura mo sa kalikasan Unggoy. Ito ag trahedyang sinasabi sa iyo,” paliwanag ni Paru-paro.
+    </p> <br>
+
+    <p>Napansin ni Unggoy ang lupa kung saan nakatanim doon ang paboritong bulaklak ni Paru-paro. Natabunan itong lupa at basura.
+    </p> <br>
+
+    <p>“Paru-paro patawad. Nagsisisi na ako sa kasalanang aking ginawa. Magbabago na ako. Hindi na ako magtatapon ng basura sa kapaligiran,” 
+        umiiyak at nagmamakaawa sa Unggoy. </p> <br>
+
+    <p>“Kung kaya mong magbago Unggoy at hindi muna talaga ito gagawin pa ulit, pinapatawad na kita. Pero tulungan mo ako at ang iba pang mga 
+        hayop para mabigyan muli ng buhay ang ating tahanan at patawarin ka rin ni Inang Kalikasan.”</p> <br>
+
+    <p>Simula noon, hindi na muling nagtapon si Unggoy ng basura kung saan-saan na lamang at unti-unti ay muling nabigyan buhay ang kanilang 
+       tirahan, malinis at mapayapa. </p> <br>
+
+    <p><span class="lesson"><b>ARAL:</b></span> <br>
+        <i>Ika ng mga matatanda: <b>Kung ano ang itinanim, ay siya ring aanihin.</b> Sa kwento na ito, matututunan ang pagtatanim ng mabuting gawa 
+           nang sa gayon ay magiging mabuti rin ang bunga. Tulad na lamang ng pagtanggap natin ng ating mga panauhin na kaiba sa ibang nasyon. 
+           Ito ay bahagi nang ating kultura. Dahil dito, nakapagtanim tayo ng mga mabubuting gawa sa ibang tao at kasunod nito ang mabubuting 
+           bunga o maidudulot na iyong ginawang kabutihan</i></p>
+
+
+      <!-- Add to Library Button -->
+</div>
+    </div>
+
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+          var body = document.body;
+          body.classList.toggle('dark-mode');
+
+          // Toggle button text based on mode
+          var darkModeToggle = document.getElementById('darkModeToggle');
+          if (body.classList.contains('dark-mode')) {
+              darkModeToggle.textContent = ' ☀';
+          } else {
+              darkModeToggle.textContent = ' ☽';
+          }
+      }
+
+      // Function to add a book to the library
+      function addToLibrary(bookTitle) {
+          // Get existing library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          // Check if the library has reached the maximum limit (10 books)
+          if (library.length >= 10) {
+              alert('You have reached the maximum limit of 10 books in your library.');
+              return; // Stop execution if the limit is reached
+          }
+
+          library.push(bookTitle);
+
+          localStorage.setItem('library', JSON.stringify(library));
+
+          alert('The book has been added to your library!');
+
+          displayLibrary();
+      }
+
+      var prevScrollPos = window.pageYOffset;
+      var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+    if (window.pageYOffset === 0) {
+        actionButtons.style.top = "10px";
+        actionButtons.style.display = "flex";
+    } else {
+        actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+        actionButtons.style.display = "none";
+    }
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entangled Life: The Illustrated Edition</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .Education2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      h3{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Entangled Life: The Illustrated Edition')">+</button>
+   </div>
+
+
+
+      <div class="Education2">
+        <h1>Entangled Life: The Illustrated Edition</h1>
+        <h2>HOW FUNGI MAKE OUR WORLDS</h2>
+        <h3> By: Merlin Sheldrake</h3> <br> 
+        <p>ABOUT ENTANGLED LIFE: THE ILLUSTRATED EDITION<br> </br>
+        <p>Merlin Sheldrake’s <i>New York Times bestseller, Entangled Life</i>, is now a lavish visual journey into the hidden lives of fungi. </p> </b>
+
+        <p>When we think of fungi, we likely think of mushrooms. But mushrooms are only fruiting bodies, analogous to apples on a tree. Most fungi live out of sight yet make up a massively diverse kingdom of organisms that supports and sustains nearly all living systems. Fungi provide a key to understanding the planet on which we live, and the ways we think, feel, and behave.</p><br>
+        
+        <p>In the first edition of the mind-bending, “gorgeous” (Margaret Atwood), ”brilliant [and] entrancing” <i>(The Guardian) Entangled Life</i>, Sheldrake introduced us to this mysterious but massively diverse kingdom of life. This new edition, abridged from the original, features over 100 full-color images that bring the spectacular variety, strangeness and beauty of fungi to life as never before.</p><br>
+
+        <p>Fungi throw our concepts of individuality and even intelligence into question. They are metabolic masters, earth makers, and key players in most of life’s processes. They can change our minds, heal our bodies, and even help us remediate environmental disaster. In vivid, surprising images, Sheldrake reveals how these extraordinary organisms—and our relationships with them—are changing our understanding of how life works.</p><br>
+          
+        <p>FUNGI ARE EVERYWHERE but they are easy to miss. They are in- F side you and around you. They sustain you and all that you de- pend on. As you read these words, fungi are changing the way that life happens, as they have done for more than a billion years. They are eating rock, making soil, digesting pollutants, nourishing and killing plants, surviving in space, inducing visions, producing food, making medicines, manipulating animal behavior, and influencing the composition of the Earth's atmosphere. Fungi provide a key to understanding the planet on which we live, and the ways that we think, feel, and behave. Yet they live their lives largely hidden from view, and over ninety percent of their species remain undocumented. The more we learn about fungi, the less makes sense without them.</p><br>
+          
+        <p>Fungi make up one of life's kingdoms as broad and busy a cate- gory as "animals" or "plants." Microscopic yeasts are fungi, as are the sprawling networks of honey fungi, or Armillaria, which are among the largest organisms in the world. The current record holder, in Or- egon, weighs hundreds of tons, spills across ten square kilometers, and is somewhere between two thousand and eight thousand years old. There are probably many larger, older specimens that remain undiscovered.</p><br>
+          
+        <p>Many of the most dramatic events on Earth have been-and con- tinue to be a result of fungal activity. Plants only made it out of the water around five hundred million years ago because of their collabo- ration with fungi, which served as their root systems for tens of mil- lion years until plants could evolve their own. Today, more than ninety percent of plants depend on mycorrhizal fungi-from the Greek words for fungus (mykes) and root (rhiza)-which can link trees in shared networks sometimes referred to as the "wood wide weh." This ancient association gave rise to all recognizable life on land, the future of which depends on the continued ability of plants and fungi to form healthy relationships.</p><br>
+          
+        <p>Plants may have greened the planet, but if we could cast our eyes back to the Devonian period, four hundred million years ago, we'd be struck by another life-form: Prototaxites. These living spires were scattered across the landscape. Many were taller than a two-story building. Nothing else got anywhere close to this size: Plants existed but were no more than a meter tall, and no animal with a backbone had yet moved out of the water. Small insects made their homes in the giant trunks, chewing out rooms and corridors. This enigmatic group of organisms thought to have been enormous fungiwere the largest living structures on dry land for at least forty million years, twenty times longer than the genus Homo has existed.</p><br>
+          
+        <p>To this day, new ecosystems on land are founded by fungi. When volcanic islands are made or glaciers retreat to reveal bare rock, li- chens (pronounced LY ken) a union of fungi and algae or bacteria- are the first organisms to establish themselves and to make the soil in which plants subsequently take root. In well-developed ecosystems soil would be rapidly sluiced off by rain were it not for the dense mesh of fungal tissue that holds it together. There are few pockets of the globe where fungi can't be found; from deep sediments on the seafloor, to the surface of deserts, to frozen valleys in Antarctica, to our guts and orifices. Tens to hundreds of species can exist in the leaves and stems of a single plant. These fungi weave themselves through the gaps between plant cells in an intimate brocade and help to defend plants against disease. No plant grown under natural condi- tions has been found without these fungi; they are as much a part of planthood as leaves or roots.</p><br>
+          
+        <p>The ability of fungi to prosper in such a variety of habitats de- pends on their diverse metabolic abilities. Metabolism is the art of chemical transformation. Fungi are metabolic wizards and can ex- plore, scavenge, and salvage ingeniously, their abilities rivaled only by bacteria. Using cocktails of potent enzymes and, acids, fungi can break down some of the most stubborn substances on the planet, from lignin, wood's toughest component, to rock; crude oil; polyure- thane plastics, and the explosive TNT, Few environments are too ex- treme. A species isolated from mining waste is one of the most radiation-resistant organisms ever discovered and may help to clean up nuclear waste sites. </p><br>
+          
+        <p>The blasted nuclear reactor at Chernobyl is home to a large population of such fungi. A number of these radio- tolerant species even grow toward radioactive "hot" particles, and appear to be able to harness radiation as a source of energy, as plants use the energy in sunlight.</p><br>
+          
+        <p>MUSHROOMS DOMINATE THE popular fungal imagination, but just as the fruits of plants are one part of a much larger structure that in- cludes branches and roots, so mushrooms are only the fruiting bodies of fungi, the place where spores are produced. Fungi use spores like plants use seeds: to disperse themselves. Mushrooms are a fungus's way to entreat the more-than-fungal world, from wind to squirrel, to assist with the dispersal of spores, or to prevent it from interfering with this process. They are the parts of fungi made visible, pungent, covetable, delicious, poisonous. However, mushrooms are only one approach among many: The overwhelming majority of fungal spe- cies release spores without producing mushrooms at all.</p><br>
+          
+        <p>We all live and breathe fungi, thanks to the prolific abilities of fun- gal fruiting bodies to disperse spores. Some species discharge spores explosively, which accelerate ten thousand times faster than a space shuttle directly after launch, reaching speeds of up to a hundred kilo- meters per hoursome of the quickest movements achieved by any living organism.</p><br>
+          
+        <!-- Add to Library Button -->
+</div>
+</div>
+
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Toggle button text based on mode
+      var darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+          darkModeToggle.textContent = ' ☀';
+      } else {
+          darkModeToggle.textContent = ' ☽';
+      }
+  }
+
+  // Function to add a book to the library
+  function addToLibrary(bookTitle) {
+      // Get existing library data from local storage
+      var libraryData = localStorage.getItem('library');
+
+      var library = [];
+      if (libraryData) {
+          library = JSON.parse(libraryData);
+      }
+
+      // Check if the library has reached the maximum limit (10 books)
+      if (library.length >= 10) {
+          alert('You have reached the maximum limit of 10 books in your library.');
+          return; // Stop execution if the limit is reached
+      }
+
+      library.push(bookTitle);
+
+      localStorage.setItem('library', JSON.stringify(library));
+
+      alert('The book has been added to your library!');
+
+      displayLibrary();
+  }
+
+  var prevScrollPos = window.pageYOffset;
+  var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+if (window.pageYOffset === 0) {
+    actionButtons.style.top = "10px";
+    actionButtons.style.display = "flex";
+} else {
+    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.display = "none";
+}
+}
+</script>
+</body>
+</html>

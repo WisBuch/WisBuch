@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+        
+        * {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        body{
+          background-color: #e6ccb2;
+          overflow-x: hidden;
+        }
+        .hero{
+        width: 100%;
+        height: 100vh;
+        padding: 0% 2%;
+        }
+        nav{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+        nav .logo {
+        width: 200px;
+        cursor: pointer;
+        margin-right: 2%;
+        margin-top: 2%;
+        align-items: left; 
+        }
+
+        nav .logo a {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+        nav .logo img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        nav ul{
+        flex: 1;
+        text-align: right;
+        margin-right: 50px;
+        }
+        nav ul li{
+        list-style: none;
+        display: inline-flex;
+        margin: 30px 30px;
+        margin-bottom: 0%;
+        margin-right: 0%;
+        
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#7f5539;
+        font-weight: 600;
+        font-size: large;
+        position: relative;
+        padding: 4px;
+        }
+        nav ul li a::after {
+        content: '';
+          position: absolute;
+          left: 0;
+          bottom: 1px;
+          width: 100%;
+          height: 3px;
+          background: #9c6644;
+          border-radius: 5px;
+          transform-origin: right;
+          transform: scaleX(0);
+        transition: transform .5s; 
+        }
+        nav a:hover:after {
+          transform-origin: left;
+          transform: scaleX(1);
+      
+        }
+        .hr1 {
+        border-top: 4px solid; 
+        color: #9c6644;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 5px;
+        }
+
+  h1{
+    color: #5f3e2a ;
+    padding-left: 10%;
+    padding-top: 50px;
+  }
+   h2{
+    color: #5f3e2a ;
+    text-align: left;
+    margin-bottom: 2%;
+   }
+
+   .wrapper{
+        margin: 50px auto;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 25px;
+        padding: 10%;
+        padding-top: 0;
+        padding-bottom: 0%;
+
+   }
+   .image4{
+        max-width: 100%;
+        float: left;
+        border: 3px solid #7f5539;
+        border-radius: 5px;
+        margin-right: 25px;
+        margin-bottom: 5px;
+   }
+
+   .text-box{
+    color: #5f3e2a;
+    max-width: 100%;
+    
+   }
+
+   .text-box p{
+    font-size: 16px;
+    text-align: justify;
+   }
+
+   .image5{
+    max-width: 100%;
+    float: right;
+    border: 3px solid #7f5539;
+    border-radius: 5px;
+    margin-right: 1%;
+    margin-bottom: 5px;
+    margin-left: 1%;
+
+   }
+
+   .image6 {
+    max-width: 100%;
+        float: left;
+        border: 3px solid #7f5539;
+        border-radius: 5px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    
+   }
+   /* Footer styles */
+   footer {
+        background-color: #704d35;
+        color: #f1e0cf;
+        padding: 10px;
+        padding-top: 0.2px;
+        text-align: left;
+        margin-top: 0%;
+        margin-right: 0.5%;
+    }
+
+    .footer-content {
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: left;
+        margin-left: 0;
+        
+    }
+
+    .footer-content p {
+    margin: 0;
+    font-size: small;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        
+    }
+    h5{
+      margin-top: 0;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 25%;
+        line-height: 40px;
+        color: #f1e0cf;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .social-icons a img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-icons a:hover {
+        background-color: #f1e0cf;
+    }
+    .image4:hover,
+    .image5:hover,
+    .image6:hover {
+        transform: scale(1.1); /* Adjust the scale factor as needed */
+        transition: transform 0.3s ease; /* Add a smooth transition */
+    }
+    @media only screen and (max-width: 768px) {
+      /* Styles for screens up to 768px wide */
+      nav ul {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        width: 150px;
+        cursor: pointer;
+        margin-right: 2%;
+        margin-top: 2%;
+        align-items: left; 
+        }
+        nav ul li{
+        list-style: none;
+        display: inline-flex;
+        margin-bottom: 0%;
+        margin-right: 0%;
+        max-width: 75%;
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#7f5539;
+        font-weight: 600;
+        font-size: small;
+        position: relative;
+        margin-top: 10%;
+        }
+      .text-box p{
+          margin-right: 5%;
+      }
+      .sticky nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust as needed */
+}
+
+.sticky nav ul li a {
+    text-decoration: none;
+    color: #7f5539;
+    font-weight: 600;
+    font-size: large;
+    position: relative;
+    padding: 4px;
+}
+
+.sticky nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 3px;
+    background: #9c6644;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s; 
+}
+
+.sticky nav a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+            flex-direction: column;
+            max-width: 100%;
+            
+        }
+
+        nav .logo {
+        width: 100px;
+        cursor: pointer;
+        margin-right: 0%;
+        margin-top: 2%;
+        align-items: left; 
+        }
+        nav ul li{
+        list-style: none;
+        display: inline-flex;
+        margin-bottom: 0%;
+        margin-right: 0%;
+        max-width: 70%;
+        margin-left: 0;
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#7f5539;
+        font-weight: 600;
+        font-size: small;
+        position: center;
+        margin-top: 10%;
+        }
+}
+
+    </style>
+</head>
+<body>
+  <div class="hero">
+    <nav id="navbar">
+      <div class="logo">
+        <a href="home.html">
+            <img src="img/logo.png" alt="Website Logo">
+        </a>
+    </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="genre.html">Genres</a></li>
+          <li><a href="library.html">Library</a></li>
+      </ul>
+    </nav>
+    <hr class="hr1">
+        <h1>What is WisBuch?</h1>
+
+        <div class="wrapper">
+            <img src="img/intro.jpg" alt="image 4" class="image4" width="450" height="250">
+            <div class="text-box">
+                <p> WisBuch is an online platform aligns with the concept of open access and the idea,
+                    that information and education should be freely available to everyone.
+                    Where you can read everything while enjoying the processof learning.<br><br>
+
+                    Nowadays, libraries can be accessed through digital. These libraries have revolutionized the traditional
+                    concept of libraries by enabling users to access information from anywhere in the world. Digital libraries
+                    have been around for a while and have evolved over the years. They offer the same services as 
+                    traditional libraries, but with the added benefit of networking systems.<br><br> Digital libraries are especially 
+                    useful for people who are far away from local or national libraries. They provide access to digital 
+                    resources such as e-books, journals, and research papers that can be accessed anytime  and are flexible
+                    (Khan, 2021). <br><br><br><br> </p>
+
+                    <img src="img/gutenberg.jpg" alt="image 5" class="image5" width="275" height="300">
+                    <h3><br><b>WisBuch<i> &#40;wis-booh&#41; </i></b></h3>
+                    <p><br>The german term "Wisbuch" means "Book of Knowledge," with its components derived from the
+                    words "Wissen," which means "Knowledge," and "Buch," signifying the word "Book." 
+
+                    <br><br> These words originated in Germany, 
+                    where Johannes Gutenberg, the first inventor 
+                    of movable books, came from.
+                    
+                    Johannes Gutenberg revolutionized the production of books 
+                    by introducing the mechanical movable-type printing 
+                    press that played a crucial role in developing books. <br><br>
+
+                    Basically, we want to create a webpage that 
+                    is visually appealing and time-efficient, while also
+                    conveying significant meaning to it!
+
+                    <br><br><br><br><br><br><br>
+
+                    <h2>What is the purpose of WisBuch?</h2>
+
+                    <img src="img/efficient.jpg" alt="image 6" class="image6" width="400" height="225">
+                    <ul><br>
+                        <li>To save the time of the users</li>
+                        <li>this library webpage provides a user-friendly platform. </li>
+                        <li>It is convinient for people to read</li>
+                        <li>It aims to provide convenient access for those users who are far from the Local/National Library.</li>
+                        <li>To provide options for introverted users. </li>
+                        <li>To promote and acknowledge Filipino Culture/ Literature</li>
+                      </ul>
+                    </p><br><br><br><b><i>It is timely and relevant to have WisBuch...</i></b>
+
+            </div>
+        </div>
+        <script>
+          window.onscroll = function() {myFunction()};
+  
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+  
+          function myFunction() {
+              if (window.pageYOffset > sticky) {
+                  navbar.classList.add("sticky");
+              } else {
+                  navbar.classList.remove("sticky");
+              }
+          }
+      </script>
+        <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+          <div class="social-icons">
+              <h5>SOCIAL</h5>
+              <a href="https://www.facebook.com/wiscbuch" title="Facebook"><img src="img/fbicon.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/wisbuch_?igsh=cW1ubWFidmllYnI1" title="Instagram"><img src="img/igicon.png" alt="Instagram"></a>
+              <a href="https://twitter.com/BuchWis16667" title="Twitter"><img src="img/xicon.png" alt="Twitter"></a>
+              <h5>CONTACT US</h5>
+              <p>wisbuch.2@gmail.com</p><br>
+              <p>&copy; 2024 WisBuch. For educational purposes only. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+  <!-- End of Footer Section -->
+    
+</body>
+</html>

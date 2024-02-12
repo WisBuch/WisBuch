@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Alamat ng Mangga</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .kids9 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Ang Alamat ng Mangga')">+</button>
+   </div>
+
+   <div class="kids9">
+    <h1>Ang Alamat ng Mangga</h1>
+    <h2>by: Jim Lloyd</h2> <br> <br>
+    <p><span class="first-letter">N</span>oong araw ang mga punong manggang tanim ni Tandang Isko ay pare-pareho lamang ang bunga. Ito'y maliliit at ang tawag dito ay "pahutan". 
+       Matamis kapag hinog, kaya gustong-gusto ng mga bata ang pahutan.</p> <br>
+
+    <p>Marami ang natutuwa kapag panahon ng pamumunga, dahil ang matandang may-ari ay hindi maramot. Minsan, may magandang dalagang sa manggahan ni Tandang Isko ay dumaan. 
+       Kusang loob na inalok ito ng mga hinog na mangga ni Tandang Isko. Sa kasiyahan ng binibini ay itinanim nito ang mga buto ng pahutan sa bukid at sa paanan ng bundok.
+    </p> <br>
+
+    <p>Agad tumubo ang dalawang buto at pagkaraan lang ng ilang araw ay ganap na itong isang puno. Labis na nagtaka si Tandang Isko sa pagkakaroon ng punong mangga sa 
+       hangganan ng bukid at sa ibaba ng batuhang bundok. Balak sanang putulin ng matanda ang dalawang puno, subalit sa tuwing siya ay lumalapit, wari'y may bumubulong ng...
+    </p> <br>
+
+    <p>"HUWAG PO! HUWAG MO AKONG PATAYIN."</p> <br>
+
+    <p>Dala rin ng panghihinayang kaya hinayaan na lang nitong lumaki at lalong lumago ang dalawang puno ng mangga. Malaking pakinabang tuloy ito sa mga magsasaka at kalabaw na roon ay sumisilong.
+    </p> <br>
+
+    <p>Ang madalas magpahinga sa punong manggang nasa bukid ay si Kalabaw, kaya nagkaroon sila ng pagkakataong magkausap palagi ng puno.
+    </p> <br>
+
+    <p>"Hulog ka ng langit sa akin, punong mangga. Dati-rati'y init sa katanghaliang tapat ay aking tinitiis, subalit nang ikaw ay sumibol, pagal kong katawan ay binigyan mo ng ginhawa. 
+       Kaya kapag sa iyo ay may nagtangkang pumutol, humanda sila sa sungay kong matutulis."</p> <br>
+
+    <p>"Salamat sa iyo, Kalabaw at ako ay iyong ipagtatanggol. Noon pa man ay hinahangaan ko na ang iyong kasipagan, kasisigan at kalakasan," nahihiyang wika ng mangga.
+    </p> <br>
+
+    <p>Hindi nagtagal, sa dalas ng kanilang pag-uusap ay nagkaintindihan ang kalabaw at ang punong mangga.</p> <br>
+
+    <p>Samantala, nagkaroon na rin ng kagustuhan ang punong manggang nasa paanan ng bundok at ito ay si "manggang pahutan" na malapit sa kanyang kinatutubuan.
+    </p> <br>
+
+    <p>Sa panahon ng paglilihi ni Pahutan ay palaging sumisilong sa lilim niya ang isang magsasakang may dalang "piko" at ewan kung bakit gustong-gusto ng mangga na titigan ang piko.
+    </p> <br>
+
+    <p>Sumapit ang araw ng pamumulaklak at pamumunga parehong pinausukan at inalagaan ni Tandang Isko ang magkahiwalay na puno. Ang lahat ng mga punong mangga ay pawang nagbunga.
+    </p> <br>
+
+    <p>Nang bumalik ang matanda upang anihin ang mga bunga ng mangga, ito ay lubhang nagulat. Ang dalawang puno na hiwalay sa karamihan ay magkaiba ng hugis at laki ng kanilang mga bunga. 
+       Hindi maisip ni Tandang Isko kung bakit nagkaganoon.</p> <br>
+
+    <p>Muli, ang magandang dalaga ay nagbalik, at...</p> <br>
+
+    <p>"Sapagkat ang malalaking mangga ay bunga ng pagkakaunawaan nina Kalabaw at Pahutan kaya tatawagin itong Manggang Kalabaw. Bagama't magkawangis sa laki ang mga bunga nila ng kabilang 
+       puno ay may pagkakaiba pa rin sa hugis at sa anilang sukat. Dahil ipinaglihi ito sa piko, kaya makikilala ito sa tawag na Manggang Piko."
+    </p> <br>
+
+    <p>"Binibini, paano mo nasabi ang bagay na iyan?"</p> <br>
+
+    <p>"SAPAGKAT AKO ANG DIWATA NG MGA PRUTAS", ngumiti ang dilag at biglang nawala.</p> <br>
+
+    <p>Ang sinabi ng diwata ay paulit-ulit ding ikinukuwento ni Tandang Isko sa mga namimili ng mangga. Datapuwa't hindi na mahalaga iyon kahit pahutan, manggang kalabaw o manggang piko basta ag mga ito ay pare-parehong mangga:
+    </p> <br>
+
+    <p>Pusong bibitin-bitin mabangong amuyin, Masarap kainin, lalo na't hinog.</p> <br>
+
+
+      <!-- Add to Library Button -->
+</div>
+    </div>
+
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+          var body = document.body;
+          body.classList.toggle('dark-mode');
+
+          // Toggle button text based on mode
+          var darkModeToggle = document.getElementById('darkModeToggle');
+          if (body.classList.contains('dark-mode')) {
+              darkModeToggle.textContent = ' ☀';
+          } else {
+              darkModeToggle.textContent = ' ☽';
+          }
+      }
+
+      // Function to add a book to the library
+      function addToLibrary(bookTitle) {
+          // Get existing library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          // Check if the library has reached the maximum limit (10 books)
+          if (library.length >= 10) {
+              alert('You have reached the maximum limit of 10 books in your library.');
+              return; // Stop execution if the limit is reached
+          }
+
+          library.push(bookTitle);
+
+          localStorage.setItem('library', JSON.stringify(library));
+
+          alert('The book has been added to your library!');
+
+          displayLibrary();
+      }
+
+      var prevScrollPos = window.pageYOffset;
+      var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+    if (window.pageYOffset === 0) {
+        actionButtons.style.top = "10px";
+        actionButtons.style.display = "flex";
+    } else {
+        actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+        actionButtons.style.display = "none";
+    }
+}
+  </script>
+</body>
+</html>

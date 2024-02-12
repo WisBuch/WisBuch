@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .Education4 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      h3{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Eve')">+</button>
+   </div>
+
+
+      <div class="Education4">
+        <h1>Eve</h1> 
+        <h2>HOW THE FEMALE BODY DROVE 200 MILLION YEARS OF HUMAN EVOLUTION</h2>
+        <h3> By: Cat Bohannon</h3>
+        <p> <b>ABOUT EVE<br> </br>
+        <p>  <b> <i>NEW YORK TIMES BESTSELLER</i> • THE REAL ORIGIN OF OUR SPECIES: a myth-busting, eye-opening landmark account of how humans evolved, offering a paradigm shift in our thinking about what the female body is, how it came to be, and how this evolution still shapes all our lives today </b> </p>
+
+        <p>“A page-turning whistle-stop tour of mammalian development that begins in the Jurassic Era, <i>Eve recasts</i> the traditional story of evolutionary biology by placing women at its center…. The book is engaging, playful, erudite, discursive and rich with detail.” —Sarah Lyall, <i>The New York Times</i></p><br>
+          
+        <p>“A smart, funny, scientific deep-dive into the power of a woman’s body, <i>Eve</i> surprises, educates, and emboldens.”—Bonnie Garmus, #1 <i>New York Times</i> best-selling author of Lessons in <i>Chemistry</i></p></b> <br>
+          
+        <p>How did the female body drive 200 million years of human evolution? • Why do women live longer than men? • Why are women more likely to get Alzheimer’s? • Why do girls score better at every academic subject than boys until puberty, when suddenly their scores plummet? • Is sexism useful for evolution? • And why, seriously why, do women have to sweat through our sheets every night when we hit menopause? </p><br>
+
+        <p>These questions are producing some truly exciting science – and in <i>Eve</i>, with boundless curiosity and sharp wit, Cat Bohannon covers the past 200 million years to explain the specific science behind the development of the female sex: “We need a kind of user’s manual for the female mammal. A no-nonsense, hard-hitting, seriously researched (but readable) account of what we are. How female bodies evolved, how they work, what it really means to biologically be a woman. Something that would rewrite the story of womanhood. This book is that story. We have to put the female body in the picture. If we don’t, it’s not just feminism that’s compromised. Modern medicine, neurobiology, paleoanthropology, even evolutionary biology all take a hit when we ignore the fact that half of us have breasts. So it’s time we talk about breasts. Breasts, and blood, and fat, and vaginas, and wombs—all of it. How they came to be and how we live with them now, no matter how weird or hilarious the truth is.” </p><br>
+          
+        <p> <i>Eve</i> is not only a sweeping revision of human history, it’s an urgent and necessary corrective for a world that has focused primarily on the male body for far too long. Picking up where Sapiens left off, Eve will completely change what you think you know about evolution and why Homo sapiens has become such a successful and dominant species.</p><br>
+          
+        <p> Elizabeth Shaw has a problem. The director Ridley Scott has impregnated her with a large, vicious alien squid. Aboard the spaceship Prometheus, she has to find a way to abort her uninvited guest without bleeding to death. Shambling to a futuristic surgery pod, she asks the computer for a C-section. "Error," it says, "this medpod is calibrated for male patients only."</p><br>
+          
+        <p>"Shit," said a woman behind me, "who does that?"</p><br>
+          
+        <p>What follows is a gruesome scene involving lasers, staples, and writhing tentacles. As I sat in a darkened theater in New York in 2012 watching this prequel to Alien, I couldn't help but think, Yes, who does that? Who sends a multitrillion-dollar expedition into space and forgets to make sure the equipment works on women?</p><br>
+                   
+        <p>Actually, modern medicine often does precisely that. One-size-fits-all doses of antidepressants are given to men and women, despite evidence that they may affect the sexes differently. </p><br>
+           
+        <p>Prescriptions for pain medications, too, are considered sex neutral, despite consistent proof that some may be less effective for women. Women are more likely to die of heart attacks, even though they're less likely to have them-symptoms differ between the sexes, so women and their doctors alike fail to catch them in time. Anesthetics in surgery, treatments for Alzheimer's, even public education curricula suffer from the ill-conceived notion that women's bodies are just bodies in general-soft and fleshy, and missing a couple of significant nether bits, but otherwise, just the same as men's.</p><br>
+          
+        <p>And of course, nearly all of the studies that produced these findings include only cisgender subjects in the world of scientific research, there's been very little attention to what happens in the bodies of people assigned one or another sex at birth who then go on to identify differently. In part, that's because there's a massive difference between biological sex-something wound deep into the warp and weft of our physical development, from in- cell organelles all the way up to whole-body features, and built over billions of years of evolutionary history-and humanity's gender identity, which is a fluid thing and brain based and at most a few hundred thousand years old.</p><br>
+    
+        <!-- Add to Library Button -->
+</div>
+</div>
+
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Toggle button text based on mode
+      var darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+          darkModeToggle.textContent = ' ☀';
+      } else {
+          darkModeToggle.textContent = ' ☽';
+      }
+  }
+
+  // Function to add a book to the library
+  function addToLibrary(bookTitle) {
+      // Get existing library data from local storage
+      var libraryData = localStorage.getItem('library');
+
+      var library = [];
+      if (libraryData) {
+          library = JSON.parse(libraryData);
+      }
+
+      // Check if the library has reached the maximum limit (10 books)
+      if (library.length >= 10) {
+          alert('You have reached the maximum limit of 10 books in your library.');
+          return; // Stop execution if the limit is reached
+      }
+
+      library.push(bookTitle);
+
+      localStorage.setItem('library', JSON.stringify(library));
+
+      alert('The book has been added to your library!');
+
+      displayLibrary();
+  }
+
+  var prevScrollPos = window.pageYOffset;
+  var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+if (window.pageYOffset === 0) {
+    actionButtons.style.top = "10px";
+    actionButtons.style.display = "flex";
+} else {
+    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.display = "none";
+}
+}
+</script>
+</body>
+</html>

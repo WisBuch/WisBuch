@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloquent JavaScript</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .education10 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Eloquent JavaScript')">+</button>
+   </div>
+
+
+    <div class="education10">
+        <h1>Eloquent JavaScript</h1>
+        <h2>By: Marijn Haverbeke</h2> <br> <br>
+        <p>What is JavaScript?</p><br>
+
+        <p>JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser. 
+            The language has since been adopted by all other major graphical web browsers. It has made modern web applications possible—applications with which you can interact directly without doing a page reload for every action. 
+            JavaScript is also used in more traditional websites to provide various forms of interactivity and cleverness.</p><br>
+
+        <p>It is important to note that JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing considerations rather than good judgment. 
+            When JavaScript was being introduced, the Java language was being heavily marketed and was gaining popularity. Someone thought it was a good idea to try to ride along on this success. Now we are stuck with the name.</p><br>
+       
+        <p>After its adoption outside of Netscape, a standard document was written to describe the way the JavaScript language should work so that the various pieces of software that claimed to support JavaScript were actually talking about the same language. 
+            This is called the ECMAScript standard, after the Ecma International organization that did the standardization. In practice, the terms ECMAScript and JavaScript can be used interchangeably—they are two names for the same language.</p><br>
+        
+        <p>There are those who will say terrible things about JavaScript. Many of these things are true. When I was required to write something in JavaScript for the first time, I quickly came to despise it. 
+            It would accept almost anything I typed but interpret it in a way that was completely different from what I meant. This had a lot to do with the fact that I did not have a clue what I was doing, of course, but there is a real issue here: JavaScript is ridiculously liberal in what it allows. 
+            The idea behind this design was that it would make programming in JavaScript easier for beginners. In actuality, it mostly makes finding problems in your programs harder because the system will not point them out to you.</p><br>
+
+        <p>This flexibility also has its advantages, though. It leaves space for a lot of  techniques that are impossible in more rigid languages, and as you will see(for example in Chapter 10), it can be used to overcome some of JavaScript’s shortcomings. 
+           After learning the language properly and working with it for a while, I have learned to actually like JavaScript. </p><br>
+
+        <p>There have been several versions of JavaScript. ECMAScript version 3 was the widely supported version in the time of JavaScript’s ascent to dominance, roughly between 2000 and 2010. During this time, work was underway on an ambitious version 4, which planned a number of radical improvements and extensions to the language. 
+           Changing a living, widely used language in such a radical way turned out to be politically difficult, and work on the version 4 was abandoned in 2008, leading to a much less ambitious version 5, which made only some uncontroversial improvements, coming out in 2009. Then in 2015 version 6 came out, a major update that included some of the ideas planned for version 4. 
+           Since then we’ve had new, small updates every year. </p><br>
+
+        <p>The fact that the language is evolving means that browsers have to constantly keep up, and if you’re using an older browser, it may not support every feature. The language designers are careful to not make any changes that could break existing programs, so new browsers can still run old programs. In this book, I’m using the 2017 version of JavaScript. 
+           Web browsers are not the only platforms on which JavaScript is used. Some databases, such as MongoDB and CouchDB, use JavaScript as their scripting and query language. Several platforms for desktop and server programming, most notably the Node.js project (the subject of Chapter 20), provide an environment for programming JavaScript outside of the browser.</p><br>
+
+        <p><center>When action grows unprofitable, gather information; when information grows unprofitable, sleep.<br>— Ursula K. Le Guin, The Left Hand of Darkness</center></p><br>
+        
+        <p>A program is many things. It is a piece of text typed by a programmer, it is the directing force that makes the computer do what it does, it is data in the computer’s memory, yet it controls the actions performed on this same memory. 
+        Analogies that try to compare programs to objects we are familiar with tend to fall short. A superficially fitting one is that of a machine—lots of separate parts tend to be involved, and to make the whole thing tick, we have to consider the ways in which these parts interconnect and contribute to the operation of the whole.</p><br>
+
+        <p>A computer is a physical machine that acts as a host for these immaterial machines. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high speed. A program can ingeniously combine an enormous number of these simple actions to do very complicated things.</p><br>
+
+        <p>A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands. But without care, a program’s size and complexity will grow out of control, confusing even the person who created it. 
+        Keeping programs under control is the main problem of programming. When a program works, it is beautiful.</p><br>
+
+        <p>The art of programming is the skill of controlling complexity. The great program is subdued—made simple in its complexity. 
+            Some programmers believe that this complexity is best managed by using only a small set of well-understood techniques in their programs. 
+            They have composed strict rules (“best practices”) prescribing the form programs should have and carefully stay within their safe little zone.</p><br>
+
+        <p>This is not only boring, it is ineffective. New problems often require new solutions. The field of programming is young and still developing rapidly, and it is varied enough to have room for wildly different approaches. 
+            There are many terrible mistakes to make in program design, and you should go ahead and make them so that you understand them. 
+            A sense of what a good program looks like is developed in practice, not learned from a list of rules.</p><br>
+ 
+        <!-- Add to Library Button -->
+</div>
+</div>
+
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Toggle button text based on mode
+      var darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+          darkModeToggle.textContent = ' ☀';
+      } else {
+          darkModeToggle.textContent = ' ☽';
+      }
+  }
+
+  // Function to add a book to the library
+  function addToLibrary(bookTitle) {
+      // Get existing library data from local storage
+      var libraryData = localStorage.getItem('library');
+
+      var library = [];
+      if (libraryData) {
+          library = JSON.parse(libraryData);
+      }
+
+      // Check if the library has reached the maximum limit (10 books)
+      if (library.length >= 10) {
+          alert('You have reached the maximum limit of 10 books in your library.');
+          return; // Stop execution if the limit is reached
+      }
+
+      library.push(bookTitle);
+
+      localStorage.setItem('library', JSON.stringify(library));
+
+      alert('The book has been added to your library!');
+
+      displayLibrary();
+  }
+
+  var prevScrollPos = window.pageYOffset;
+  var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+if (window.pageYOffset === 0) {
+    actionButtons.style.top = "10px";
+    actionButtons.style.display = "flex";
+} else {
+    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.display = "none";
+}
+}
+</script>
+</body>
+</html>

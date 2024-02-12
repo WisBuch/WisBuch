@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+    <style>
+       * {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        body{
+          background-color: #e6ccb2;
+          overflow-x: hidden;
+        }
+        .hero{
+        width: 100%;
+        height: 100vh;
+        padding: 0% 2%;
+        }
+        nav{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+        nav .logo {
+        width: 100px;
+        cursor: pointer;
+        margin-right: 2%;
+        margin-top: 2%;
+        align-items: left; 
+        }
+
+        nav .logo a {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+        nav .logo img {
+            width: 100%; 
+            height: auto; 
+        }
+        nav ul{
+        flex: 1;
+        text-align: right;
+        margin-right: 50px;
+        }
+        nav ul li{
+        list-style: none;
+        display: inline-flex;
+        margin: 30px 30px;
+        margin-bottom: 0%;
+        margin-right: 0%;
+        
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#7f5539;
+        font-weight: 600;
+        font-size: large;
+        position: relative;
+        padding: 4px;
+        }
+        nav ul li a::after {
+        content: '';
+          position: absolute;
+          left: 0;
+          bottom: 1px;
+          width: 100%;
+          height: 3px;
+          background: #9c6644;
+          border-radius: 5px;
+          transform-origin: right;
+          transform: scaleX(0);
+        transition: transform .5s; 
+        }
+        nav a:hover:after {
+          transform-origin: left;
+          transform: scaleX(1);
+      
+        }
+        .hr1 {
+        border-top: 4px solid; 
+        color: #9c6644;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 5px;
+        }
+        header {
+          background-color: #664229;
+          color: #f0e2d3;
+          text-align: center;
+          padding: 50px;
+        }
+        
+        .hera {
+            padding: 25px;
+        }
+        #libraryList {
+            list-style: none;
+            padding: 0;
+            
+        }
+        #libraryList li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 2%;
+        }
+        #libraryList li img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+
+        }
+        #libraryList li a {
+            color: #664229;
+            text-decoration: none;
+            font-size: 18px;
+
+        }
+        #libraryList li button {
+            background-color: #664229;
+            color: #f0e2d3;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-left: 20px;
+            border-radius: 15px;
+        }
+        #libraryList li button:hover {
+            background-color: #664229;
+        }
+        /* Footer styles */
+    footer {
+        background-color: #704d35;
+        color: #f1e0cf;
+        padding: 10px;
+        padding-top: 0.2px;
+        text-align: left;
+        margin-top: 85%;
+        margin-right: 0.5%;
+    }
+
+    .footer-content {
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: left;
+        margin-left: 0;
+        
+    }
+
+    .footer-content p {
+    margin: 0;
+    font-size: small;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        
+    }
+    h5{
+      margin-top: 0;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 25%;
+        line-height: 40px;
+        color: #f1e0cf;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .social-icons a img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-icons a:hover {
+        background-color: #f1e0cf;
+    }
+    @media only screen and (max-width: 768px) {
+      /* Styles for screens up to 768px wide */
+      nav ul {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        width: 150px;
+        cursor: pointer;
+        margin-right: 2%;
+        margin-top: 2%;
+        align-items: left; 
+        }
+        nav ul li{
+        list-style: none;
+        display: inline-flex;
+        margin-bottom: 0%;
+        margin-right: 0%;
+        max-width: 75%;
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#7f5539;
+        font-weight: 600;
+        font-size: small;
+        position: relative;
+        margin-top: 10%;
+        }
+      .text-box p{
+          margin-right: 5%;
+      }
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul {
+            flex-direction: column;
+            max-width: 100%;
+            
+        }
+
+        nav .logo {
+        width: 100px;
+        cursor: pointer;
+        margin-right: 0%;
+        margin-top: 2%;
+        align-items: left; 
+        }
+        nav ul li{
+        list-style: none;
+        display: inline-flex;
+        margin-bottom: 0%;
+        margin-right: 0%;
+        max-width: 70%;
+        margin-left: 0;
+        
+        
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#7f5539;
+        font-weight: 600;
+        font-size: small;
+        position: center;
+        margin-top: 10%;
+        }
+}
+    
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav id="navbar">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="img/logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="genre.html">Genres</a></li>
+              <li><a href="library.html">Library</a></li>
+          </ul>
+        </nav>
+    <hr class="hr1">
+    <header>
+      <h1>Books in my Library</h1>
+      <h4>My Personal Space</h4>
+    </header>
+    
+    
+    <div class="hero">
+      
+        <ul id="libraryList"></ul>
+    </div>
+     <!-- Footer Section -->
+     <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <h5>SOCIAL</h5>
+                <a href="https://www.facebook.com/wiscbuch" title="Facebook"><img src="img/fbicon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/wisbuch_?igsh=cW1ubWFidmllYnI1" title="Instagram"><img src="img/igicon.png" alt="Instagram"></a>
+                <a href="https://twitter.com/BuchWis16667" title="Twitter"><img src="img/xicon.png" alt="Twitter"></a>
+                <h5>CONTACT US</h5>
+                <p>wisbuch.2@gmail.com</p><br>
+                <p>&copy; 2024 WisBuch. For educational purposes only. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+      
+
+    <script>
+        window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+      if (window.pageYOffset > sticky) {
+          navbar.classList.add("sticky");
+      } else {
+          navbar.classList.remove("sticky");
+      }
+  }
+      // Function to display the user's library
+      function displayLibrary() {
+          // Get the library list element
+          var libraryList = document.getElementById('libraryList');
+
+          // Clear existing library list
+          libraryList.innerHTML = '';
+
+          // Get library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          // If library data exists, parse it from JSON and display
+          if (libraryData) {
+              var library = JSON.parse(libraryData);
+              library.forEach(function(bookTitle) {
+                  var li = document.createElement('li');
+
+                  // Create an image element for the book
+                  var img = document.createElement('img');
+                  img.src = getBookImage(bookTitle); // Function to get the image URL
+                  img.alt = bookTitle + ' Image';
+                  li.appendChild(img);
+
+                  var a = document.createElement('a');
+                  a.href = getBookURL(bookTitle); // Function to get the URL of the book content
+                  a.textContent = bookTitle;
+                  li.appendChild(a);
+
+                  var removeButton = document.createElement('button');
+                  removeButton.textContent = 'Remove from Library';
+                  removeButton.onclick = function() {
+                      removeFromLibrary(bookTitle);
+                  };
+                  li.appendChild(removeButton);
+
+                  libraryList.appendChild(li);
+              });
+          }
+      }
+
+      // URL of the book content based on the book title
+      function getBookURL(bookTitle) {
+          // mapping of book titles to content URLs
+          var bookURLMap = {
+              'The Hunger Games': 'hungergaames.htm',
+              'Harry Potter and the Sorcerers Stone 1': 'harrypotter1.htm',
+              'Harry Poter and the Chamber of Secrets 2': 'harrypotter2.htm',
+              'Harry Potter and the Prisoner of Azkaban 3': 'harrypotter3.htm',
+              'Harry Potter and the Goblet of Fire 4': 'harrypotter4.htm',
+              'Harry Potter and the Order of the Phoenix 5': 'harrypotter5.htm',
+              'Harry Potter and the Half Blood Prince 6': 'harrypotter6.htm',
+              'Harry Potter and the Deathly Hallows 7': 'harrypotter7.htm',
+              'There Are No Monsters on Rancho Buenavista': 'horror1.htm',
+              'Fisheyes': 'horror2.htm',
+
+              'Si Langgam at si Tipaklong': 'langgam.htm',
+              'Si Pagong at si Matsing': 'pagong.htm',
+              'Ang Alamat ng Pinya': 'pinya.htm',
+              'Alamat ng Ibong Adarna': 'ibongadarna.htm',
+              'Ang Alamat ng Butiki': 'Butiki.htm',
+              'Ang Unggoy At Paru-Paro': 'Paru.htm',
+              'Ang Misteryo ng Mahiwagang Bahay na Puno': 'Treehouse.htm',
+              'Ang Alamat ng Kwago': 'Kwago.htm',
+              'Ang Alamat ng Mangga': 'Mangga.htm',
+              'Ang Alamat ng Sili': 'Sili.htm',
+
+              'Fundamentals Of Information Technology': 'fundamentals.htm',
+              'Entangled Life: The Illustrated Edition': 'entangledlife.htm',
+              'Languishing': 'languishing.htm',
+              'Eve': 'eve.htm',
+              'Introduction To Cyber Security': 'cybersecurity.htm',
+              'Machine Learning Algorithms Models and Applications': 'machinelearning.htm',
+              'THE HIDDEN FORCES THAT SWAY DOCTORS, IMPACT PATIENTS, AND SHAPE OUR HEALTH': 'medicine.htm',
+              'Introduction to Programming Using Java': 'programming.htm',
+              'Why We Remember': 'whyweremember.htm',
+              'Eloquent JavaScript': 'javascript.htm',
+
+              'Trends in E-book Research': 'research1.htm',
+              'The Importance Of E-Books In Improving Students Skills In Physics Learning In The 21st Century: A Literature Review': 'research2.htm',
+              'The Effects of Electronic Books Designed for Children in Education': 'research3.htm',
+              'Exploratory Research: The Effects of Electronic Books on College Students': 'research4.htm',
+              'A Survey on Current Technologies for Web Development': 'research5.htm',
+          };
+
+            //check maps
+          if (bookTitle in bookURLMap) {
+              return bookURLMap[bookTitle];
+          } else {
+              return '#'; 
+          }
+      }
+
+      // image URL of the book
+      function getBookImage(bookTitle) {
+          // mapping of book image URLs
+          var bookImageMap = {
+              'The Hunger Games': 'img/hungergaames.jpg',
+              'Harry Potter and the Sorcerers Stone 1': 'img/harrypotter1.jpg',
+              'Harry Poter and the Chamber of Secrets 2': 'img/harrypotter2.jpg',
+              'Harry Potter and the Prisoner of Azkaban 3': 'img/harrypotter3.jpg',
+              'Harry Potter and the Goblet of Fire 4': 'img/harrypotter4.jpg',
+              'Harry Potter and the Order of the Phoenix 5': 'img/harrypotter5.jpg',
+              'Harry Potter and the Half Blood Prince 6': 'img/harrypotter6.jpg',
+              'Harry Potter and the Deathly Hallows 7': 'img/harrypotter7.jpg',
+              'There Are No Monsters on Rancho Buenavista': 'img/horror1.jpg',
+              'Fisheyes': 'img/horror2.jpg',
+
+              'Si Langgam at si Tipaklong': 'img/langgam.jpg',
+              'Si Pagong at si Matsing': 'img/pagong.jpg',
+              'Ang Alamat ng Pinya': 'img/pinya.jpg',
+              'Alamat ng Ibong Adarna': 'img/ibongadarna.jpg',
+              'Ang Alamat ng Butiki': 'img/Butiki.jpg',
+              'Ang Unggoy At Paru-Paro': 'img/Paru.jpg',
+              'Ang Misteryo ng Mahiwagang Bahay na Puno': 'img/Treehouse.jpg',
+              'Ang Alamat ng Kwago': 'img/Kwago.jpg',
+              'Ang Alamat ng Mangga': 'img/Mangga.jpeg',
+              'Ang Alamat ng Sili': 'img/Sili.jpeg',
+
+              'Fundamentals Of Information Technology': 'img/fundamentals.jpg',
+              'Entangled Life: The Illustrated Edition': 'img/entangledlife.jpg',
+              'Languishing': 'img/languishing.jpg',
+              'Eve': 'img/eve.jpg',
+              'Introduction To Cyber Security': 'img/cybersecurity.jpg',
+              'Machine Learning Algorithms Models and Applications': 'img/machinelearning.jpg',
+              'THE HIDDEN FORCES THAT SWAY DOCTORS, IMPACT PATIENTS, AND SHAPE OUR HEALTH': 'img/medicine.jpg',
+              'Introduction to Programming Using Java': 'img/programming.jpg',
+              'Why We Remember': 'img/whyweremember.jpg',
+              'Eloquent JavaScript': 'img/javascript.jpg',
+
+              'Trends in E-book Research': 'img/research1.jpg',
+              'The Importance Of E-Books In Improving Students Skills In Physics Learning In The 21st Century\: A Literature Review': 'img/research2.jpg',
+              'The Effects of Electronic Books Designed for Children in Education': 'img/research3.jpg',
+              'Exploratory Research: The Effects of Electronic Books on College Students': 'img/research4.jpg',
+              'A Survey on Current Technologies for Web Development': 'img/research5.jpg',
+          };
+
+          // checking maps
+          if (bookTitle in bookImageMap) {
+              return bookImageMap[bookTitle];
+          } else {
+              // return a default image URL
+              return 'img/default.jpg';
+          }
+      }
+
+      //  add a book to the library
+      function addToLibrary(bookTitle) {
+          // Get existing library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          
+          library.push(bookTitle);
+
+          localStorage.setItem('library', JSON.stringify(library));
+
+          alert('The book has been added to your library!');
+
+          displayLibrary();
+      }
+
+      // remove a book from the library
+      function removeFromLibrary(bookTitle) {
+      
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          var index = library.indexOf(bookTitle);
+          if (index !== -1) {
+           
+              library.splice(index, 1);
+
+              localStorage.setItem('library', JSON.stringify(library));
+
+              displayLibrary();
+          }
+      }
+
+      // Display the library when the page loads
+      window.onload = displayLibrary;
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Alamat ng Butiki</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .kids5 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Ang Alamat ng Butiki')">+</button>
+   </div>
+
+   <div class="kids5">
+    <h1>Ang Alamat ng Butiki</h1>
+    <h2>by: Jim Lloyd</h2> <br> <br>
+    <p><span class="first-letter">N</span>oong unang panahon, may isang batang ubod ng pilyo at pakialamero sa lahat ng bagay. 
+        Marami tuloy ang nagagalit, kaya madalas mapalo at mapagalitan si Kiko ng ama't ina. Gayunpaman, wala ring kadala-dala 
+        ang batang ito na lalong tumigas ang ulo at wala pang galang sa mattanda. Dahil dito, walang may gustong makipagkaibigan sa kanya. 
+        Palibhasa'y walang kalaro, ang mga hayop na lang ang ginawang libangan nito. Ang maaamong hayop ay nagiging mailap dahil sa pananakit ni Kiko. 
+        Kalaunan, pati ang tanim ng may tanim ay lihim nitong sinisira. 
+        </p> <br>
+
+        <p>Isang araw, habang nagwawalis ng bakuran ang ina ay lumapit si Kiko sa punso at walang sabi-sabing winasak ito. Galit na galit ang ina sa anak.. 
+           Pagkatapos ay abut-abot ang kanyang paghingi ng paumanhin sa mga duwende.</p> <br>
+
+        <p>"Mga nuno, patawarin po ninyo ang aking anak. Hinding-hindi napo siya uulit. Mag-babait na po siya. Pangako po."
+        </p> <br>
+
+        <p>Pinangaralang mabuti ng ina si Kiko na huwag uulitin ang ginawang paglapastangan nito sa punso dahil masamang magalit ang mga lamang-lupa.
+        </p> <br>
+
+        <p>Subalit kinabukasan, matapos isuga ang kalabaw ay bayawak naman ang napagtuunan ng pansin ng batang sutil. Sinundan ito ngunit nawala nang 
+           sumuot sa nakausling ugat ng puno. Hawak ang tirador ay sinaliksik ni Kiko ang buong paligid.</p> <br>
+        
+        <p>Laking galak nito nang matagpuan ang maraming itlog ng bayawak, at tuwang-tuwa na tinirador ang mga itlog. Biglang nagulat ang bata nang 
+           lumitaw sa harp niya ang isang duwende.</p><br>
+
+        <p>"HOY! BATANG SALBAHE, BAKIT MO BINASAG ANG MGA ITLOG? HINDI MO BA ALAM NA MAY BUHAY SALOOB NITO? SA GINAWA MONG IYAN, KITA'Y PARURUSAHAN. 
+            MAGIGING KALAHI KA NG BAYAWAK...!"</p> <br>
+
+        <p>"Huwag po, maawa po kayo sa akin. Magpapakabait napo ako, peks man."</p> <br>
+
+        <p>"SINUNGALING! ILANG BESES KA NANG NANGANGAKO TUWING PINAPALO KA NG TATAY MO. AT KAHAPON LANG, NANGAKO ANG NANAY MO, PERO NAGBAGO KABA? 
+            NGAYON, BILANG PARUSA, IKAW AY HAHALIK SA LUPA BAGO MAGTAKIP SILIM AT DAHIL IKAW AY TAO NA NILALANG NG MAYKAPAL KAYA SA TAHANAN KA RIN 
+            MANANAHAN. BUTIKI ANG ITATAWAG SA IYO!" Pagkawika'y dagling naglaho ang duwende.</p> <br>
+
+        <p>Dali-daling kumaripas ng takbo ang nahintakutang bata at nagsisigaw nang...</p> <br>
+
+        <p>"AYOKONG MAGING BUTIKI NANAY, TULUNGAN MO AKO... AYAW KONG MAGING BUTIKI...!"</p><br>
+
+        <p>Napadungaw ang ina at kitang-kita niya ang pagkasubasob ng anak bago paman ito nakaakyat ng hagdan. Nagtaka ito sa pagbabagong-anyo ni Kiko 
+           hanggang maging maliit na hayop na animo'y bayawak. Palibhasa'y "BUTIKI" ang huling katagang narinig sa anak, kaya butiki na rin ang itinawag niya rito. 
+           Bagama't mabait ay mailap ang hayop na ito dahil sa hiya.</p><br>
+        
+        <p>Patuloy pa rin ang paghalik ng butiki sa lupa tuwing dapithapon. Panahon na lang ang hahatol kung nararapat na ngang ibalik sa dating anyo si Kiko. 
+           Para sa mga duwende, mabuti nang manatili itong butiki sa habang panahon. (HOY! BATA, GUSTO MO MAGING BUTIKI?)</p>
+
+
+      <!-- Add to Library Button -->
+</div>
+    </div>
+
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+          var body = document.body;
+          body.classList.toggle('dark-mode');
+
+          // Toggle button text based on mode
+          var darkModeToggle = document.getElementById('darkModeToggle');
+          if (body.classList.contains('dark-mode')) {
+              darkModeToggle.textContent = ' ☀';
+          } else {
+              darkModeToggle.textContent = ' ☽';
+          }
+      }
+
+      // Function to add a book to the library
+      function addToLibrary(bookTitle) {
+          // Get existing library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          // Check if the library has reached the maximum limit (10 books)
+          if (library.length >= 10) {
+              alert('You have reached the maximum limit of 10 books in your library.');
+              return; // Stop execution if the limit is reached
+          }
+
+          library.push(bookTitle);
+
+          localStorage.setItem('library', JSON.stringify(library));
+
+          alert('The book has been added to your library!');
+
+          displayLibrary();
+      }
+
+      var prevScrollPos = window.pageYOffset;
+      var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+    if (window.pageYOffset === 0) {
+        actionButtons.style.top = "10px";
+        actionButtons.style.display = "flex";
+    } else {
+        actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+        actionButtons.style.display = "none";
+    }
+}
+  </script>
+</body>
+</html>

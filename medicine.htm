@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Acts of Medicine</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .Education7 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      h3{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('THE HIDDEN FORCES THAT SWAY DOCTORS, IMPACT PATIENTS, AND SHAPE OUR HEALTH')">+</button>
+   </div>
+
+
+      <div class="Education7">
+        <h1>Random Acts of Medicine</h1> <br> 
+        <h2>THE HIDDEN FORCES THAT SWAY DOCTORS, IMPACT PATIENTS, AND SHAPE OUR HEALTH</h2> <br>
+        <h3>By:  Anupam B. Jena and Christopher Worsham</h3> <br> 
+        <p> <b>ABOUT RANDOM ACTS OF MEDICINE </b><br> </br>
+          
+        <p>Does timing, circumstance, or luck impact your health care? This groundbreaking book reveals the hidden side of medicine and how unexpected—but predictable—events can profoundly affect our health. • Is there ever a good time to have a heart attack? Why do kids born in the summer get diagnosed more often with A.D.H.D.? How are marathons harmful for your health, even when you’re not running?</p> </b> <br>
+
+       <p>“Fantastically entertaining and deeply thought-provoking.” —Emily Oster, <i> New York Times bestselling author of The Family Firm, Cribsheet, and Expecting Better
+
+          “Random Acts of Medicine </i> shows that the ingenious use of natural experiments can improve medicine and save lives.” <i> —Wall Street Journal </i> </p><br>
+        
+       <p>As a University of Chicago–trained economist and Harvard medical school professor and doctor, Anupam Jena is uniquely equipped to answer these questions. And as a critical care doctor at Massachusetts General who researches health care policy, Christopher Worsham confronts their impact on the hospital’s sickest patients. In this singular work of science and medicine, Jena and Worsham show us how medicine really works, and its effect on all of us.</p><br>
+
+       <p>	Relying on ingeniously devised natural experiments—random events that unknowingly turn us into experimental subjects—Jena and Worsham do more than offer readers colorful stories. They help us see the way our health is shaped by forces invisible to the untrained eye. Is there ever a good time to have a heart attack? Do you choose the veteran doctor or the rookie?  Do you really need the surgery your doctor recommends? These questions are rife with significance; their impact can be life changing. Addressing them in a style that’s both animated and enlightening, Random Acts of Medicine empowers you to see past the white coat and find out what really makes medicine work—and how it could work better. </p><br>
+
+       <p>CHANCE OCCURRENCES CHANGE the course of our lives all the time. Imagine the couple who meets in an airport when a blizzard cancels their flights. Or think of the entrepreneurs who happen to sit next to each other at jury duty and who hatch a business plan to start a company in the six hours it takes to be dismissed. Imagine the woman who misses the bus because a meeting ran late and who, on her walk home, happens to pass an animal shelter and adopts her new best friend.</p><br>
+
+       <p>These are unpredictable moments-chance waltzing into our lives when we least expect it. We can all probably think of times in our lives when we were led down alternate paths, both good and bad, thanks to chance. These phenomena go by many familiar names: randomness, luck, serendipity, kismet, happenstance, accidents, or flukes.</p><br>
+         
+       <p>Chance can even play a role in life and death. A retiree collapses in the supermarket from a heart attack and is rushed to the hospital as paramedics perform CPR, but the ambulance is delayed due to scheduled road closures. He dies from the heart attack two weeks later. If he had collapsed the day before when the roads were clear, might he have survived? A child doesn't get a flu shot at his annual doctor's visit, because the vaccine is not yet available in his doctor's office. His parents never bring him back for a flu shot appointment. That winter, he catches influenza and spreads it to his grandmother, who ends up in the hospital. Had the flu shot been available at his annual visit, he likely would have received it. Would he and his grandmother still have gotten sick?</p><br>
+          
+       <p> It's frightening to think about how random occurrences contribute to our health, life, and death. We all like to think that if we do the right things-eat well, wear a seat belt, quit smoking, take the medications our doctor prescribes-we can control what happens with our bodies and our lives.</p><br>
+           
+       <p> This is no less true for doctors. We too like to think that the decisions we make for our patients-whether to prescribe them a drug, perform surgery, order a diagnostic test-are based only on science and carefully considered data, not on simple chance. The reality, though, is that medicine can be messy, complicated, and uncertain. There are many opportunities for randomness to affect the medical care we give and receive.</p><br>
+    
+       <!-- Add to Library Button -->
+  </div>
+  </div>
+  
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        var body = document.body;
+        body.classList.toggle('dark-mode');
+
+        // Toggle button text based on mode
+        var darkModeToggle = document.getElementById('darkModeToggle');
+        if (body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = ' ☀';
+        } else {
+            darkModeToggle.textContent = ' ☽';
+        }
+    }
+
+    // Function to add a book to the library
+    function addToLibrary(bookTitle) {
+        // Get existing library data from local storage
+        var libraryData = localStorage.getItem('library');
+
+        var library = [];
+        if (libraryData) {
+            library = JSON.parse(libraryData);
+        }
+
+        // Check if the library has reached the maximum limit (10 books)
+        if (library.length >= 10) {
+            alert('You have reached the maximum limit of 10 books in your library.');
+            return; // Stop execution if the limit is reached
+        }
+
+        library.push(bookTitle);
+
+        localStorage.setItem('library', JSON.stringify(library));
+
+        alert('The book has been added to your library!');
+
+        displayLibrary();
+    }
+
+    var prevScrollPos = window.pageYOffset;
+    var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+  if (window.pageYOffset === 0) {
+      actionButtons.style.top = "10px";
+      actionButtons.style.display = "flex";
+  } else {
+      actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+      actionButtons.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

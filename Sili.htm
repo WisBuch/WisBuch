@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Alamat ng Sili</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .kids10 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Ang Alamat ng Sili')">+</button>
+   </div>
+
+   <div class="kids10">
+    <h1>Ang Alamat ng Sili</h1>
+    <h2>by: Jim Lloyd</h2> <br> <br>
+    <p><span class="first-letter">S</span>a isang malayong lugar sa Bicol, may isang napakalaking kaharian na pinamumunuan ng isang hari at reyna at ng kanilang anak na si Prinsipe Siling. 
+       Masaya silang namumuhay sa kaharian, ginagalang at may mataas na pagtingin ang mga tao sa nasasakupan ng hari at reyna dahil na rin sa kanilang angkin na kabaitan sa mga mahihirap. 
+       Tumutulong sila sa bawat taong kumakatok sa kanilang kaharian kaya ganoon na lamang ang pagmamahal sa kanila ng mga tao roon.
+    </p> <br>
+
+    <p>Samantalang, isang araw naisipan ng mag-asawang Haring Iling at Reyna Cecilia na magbakasyon sa Europa upang ipagdiwang ang kanilang tatlumpong anibersaryo ng kanilang pagmamahalan. 
+       “Mahal kong Reyna, kailangan po ba talagang sa Europa pa kayo magbakasyon ni Amang hari?” pagpipigil ni Prinsipe Siling. “ Anak, hindi naman kami magtatagal ng iyong amang hari roon, 
+       nais lang ng iyong ama na pumunta sa ibang lugar para maiba naman” sagot ni reyna Cecilia . “ Oo nga naman prinsipe, huwag mo kaming alalahanin, palagi kami roon mag-iingat ng reyna 
+       nang sa ganun matutunan mo na rin pamunuan ang ating kaharian upang pag nawala na kami ng iyong ina, handang-handa ka na maging isang hari. “ Huwag ninyong sabihin iyan dahil walang 
+       papalit sainyo sa pagiging magaling na hari sa lahat” pagpupuri ng Prinsipe.</p> <br>
+
+    <p>Pagkatapos magpaalam ng mag-asawa sa buong kaharian, lumakad na ito sakay ng kanilang barko patungong Europa. Mahigit kalahating buwan ang pagpapalaot ng barko patungong Europa. 
+       Pagkaraan ng tatlong araw, isang malakas na bagyo ang dumating. Alalang-alala ang Prinsipe sa kanyang amang hari at inang reyna. Alam niyang labis na lalakas ang alon dulot ng bagyo 
+       at hindi malayong maapektuhan ang barkong sinasakyan nila. Matapos ang bagyo, agad na lumabas ang Prinsipe upang mag ikot-ikot sa buong komunidad upang kumustahin ang mga nasasakupan. 
+       Nais nya rin makibalita sa barkong sinasakyan ng kanyang mga magulang. Habang naghihintay siya sa pantalan,kitang-kita sa kanya ang labis na takot at pag-aalala. Paparating na ang isa 
+       sa mga kawal na siya lamang ang nailigtas ng kanyang mga inutusang mga kawal sa paghahanap sa barkong sakay ng amang hari at reyna. Nagbigay muna ito ng galang sa pamamagitan ng pagyuko 
+       bago nagpahayag, “ mahal na prinsipe, ipagpaumanhin po ninyo ngunit wala na po ang inyong mga magulang. Nagkahiwalay po kami ng palakas na ng palakas ang bagyo at sa sobrang lakas po ng 
+       hagupit ng bagyo lumubog ang sinasakyan namin na barko. Nagising na lamang po ako na napadpad po ako sa isang isla kung saan natagpuan ako ng mga inatasan ninyo sa paghahanap”.
+    </p> <br>
+
+    <p>Namugto ang mga mata ng prinsipe at kumaripas ito pabalik ng kaharian. Nagulat na lamang ang karamihan sa biglaang pagtakbo nito. Halos ilang araw siyang nagkulong sa kanyang silid dahil 
+       na lamang sa labis na hinagpis na sinapit ng kanyang mga magulang. Alalang-alala na ang mga tao kay Prinsipe Siling dahil hindi ito kumakain. Nabalot ng kalungkutan ang kaharian, kaya’t 
+       ng matapos ang seremonya na ginanap sa karagatan na pinaglubugan ng labi ng mag-asawa hindi pa rin iniwan ng mga tao ang prinsipe kaya inintindi na lamang nila ito. Isang araw gulat na 
+       gulat ang mga tao sa kaharian sa muling pagbalik ng sigla nito na tila’y handang harapin ang lahat. Ngunit ng makaraan ang ilang buwan unti-unting nagbago si Prinsipe Siling. Nagiging masungit, 
+       mainitin ang ulo at hindi na rin ito nakikihalubilo sa mga tao. Nagiging malupit siya sa mga tagasilbi at mga kawal ng kaharian, malayo sa dating prinsipe na kanilang kilala noon.
+    </p> <br>
+
+    <p>“Patawad po kamahalan, hindi ko po sinasadya,papalitan ko na lamang po ang aking mga napinsalang mga kagamitan”. “ Umalis ka riyan sa harapan ko! Baguhan ka ba dito? Pagdala lang ng mga 
+       kagamitan hindi mo pa magawa! galit na sabi ni Prinsipe Siling. “Paumanhin po hindi na po mauulit”, mangiyak-ngiyak na sabi ng tagasilbi. Talagang hindi na mauulit dahil makakaalis ka na 
+       ng kaharian ko! Umalis na ang kasambahay pagkatapos siyang palayasin ng prinsipe. Nagpatuloy si Prinsipe Siling sa pagmamalupit sa mga tao sa kaharian. Kaya naman paunti-unti ng 
+       nagsisialisan ang mga tagsilbi dahil sa takot sa prinsipe. Hindi maikubli na nagbago na nga ang prinsipe simula ng mamatay ang kanyang mga magulang. Isang diwata ang pinapanood ang prinsipe 
+       sa kanyang pagmamalupit sa mga tao na minsan ay naranasan niya rin sa isang prinsipe. “ Hindi siya karapat-dapat sa kaharian na ipinagkaloob ko sa kanyang mga magulang. Kailangan siyang 
+       parusahan dahil labis-labis na ang paghihirap ng mga tao dahil sa kanya” bulong ng diwata sa kanyang sarili.
+    </p> <br>
+
+    <p>Isang araw, nagpasya ang prinsipe na mamasyal ng mag-isa,ilang araw na ang nakakalipas ngunit hindi pa rin siya bumabalik ng kaharian. Nagtaka ang mga tao at bigla na lamang namangha at 
+       nagulat dahil sa kanilang nakita sa hardin na paboritong pasyalan ni Prinsipe Siling. Isang halaman na namumunga ng kulay luntian at pula na hugis pahaba at paublong na may makinis na balat. 
+       Naalala ng mga tao roon si Prinsipe Siling na may pagkakahalintulad sa balat ng namumula nitong pisngi. Sinumpa ng diwata si Prinsipe Siling na maging isang halaman na may katangian ng 
+       pagigigng maanghang dahil sa ugali nitong kalupitan.</p> <br>
+
+    <p>Mula noon, hindi na nakita ang prinsipe sa kaharian at tanging halaman na lamang ang natagpuan ng mga tao na maihahalintulad kay Prinsipe Siling kaya naman inalagaan nila ito at pinangalanan na Sili.
+    </p> <br>
+
+
+      <!-- Add to Library Button -->
+</div>
+    </div>
+
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+          var body = document.body;
+          body.classList.toggle('dark-mode');
+
+          // Toggle button text based on mode
+          var darkModeToggle = document.getElementById('darkModeToggle');
+          if (body.classList.contains('dark-mode')) {
+              darkModeToggle.textContent = ' ☀';
+          } else {
+              darkModeToggle.textContent = ' ☽';
+          }
+      }
+
+      // Function to add a book to the library
+      function addToLibrary(bookTitle) {
+          // Get existing library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          // Check if the library has reached the maximum limit (10 books)
+          if (library.length >= 10) {
+              alert('You have reached the maximum limit of 10 books in your library.');
+              return; // Stop execution if the limit is reached
+          }
+
+          library.push(bookTitle);
+
+          localStorage.setItem('library', JSON.stringify(library));
+
+          alert('The book has been added to your library!');
+
+          displayLibrary();
+      }
+
+      var prevScrollPos = window.pageYOffset;
+      var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+    if (window.pageYOffset === 0) {
+        actionButtons.style.top = "10px";
+        actionButtons.style.display = "flex";
+    } else {
+        actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+        actionButtons.style.display = "none";
+    }
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To Cyber Security</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .education5 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Introduction To Cyber Security')">+</button>
+   </div>
+
+
+    <div class="education5">
+        <h1>Introduction To Cyber Security</h1>
+        <h2>By: Jeetendra Pande</h2> <br> <br>
+        <p>Internet is among the most important inventions of the 21stcentury which have affected our life. Today internet have crosses every barrier and have changed the way we use to talk, play games, work, shop, make friends, listen music, see movies, order food, pay bill, greet your friend on his birthday/ anniversary, etc. 
+          You name it, and we have an app in place for that. It has facilitated our life by making it comfortable. Gone are the days when we have to stand in a long queue for paying our telephone and electricity bills. Now we can pay it at a click of a button from our home or office.</p><br>
+
+        <p>The technology have reached to an extent that we don’t even require a computer for using internet. 
+          Now we have internet enabled smartphone, palm tops, etc. through which we can remain connected to our friends, family and office 24x7. Not only internet has simplified our life but also it has brought many things within the reach of the middle class by making them cost effective. It was not long back, while making an ISD or even a STD call, the eyes were stricken on the pulse meter.</p><br>
+       
+        <p>The calls were very costly. ISD and STD were used to pass on urgent messages only and the rest of the routine communication was done using letters since it was a relatively very cheap. 
+          Now internet have made it possible to not only talk but use video conference using popular applications like skype, gtalk etc. at a very low price to a level where a one hour video chat using internet is cheaper that the cost of sending a one page document from Delhi to Bangalore using speed-post or courier service. Not only this, internet has changed the use of the typical devices that were used by us. </p><br>
+        
+        <p>Television can be used not only for watching popular tv shows and movies but can be used for calling/ video chatting with friend using internet. Mobile phone is not only used for making a call but viewing a latest movie. We can remain connected to everyone, no matter what our location is. 
+          Working parents from office can keep eye on their children at home and help them in their homework. A businessman can keep eye on his staff, office, shop, etc with a click of a button. It has facilitated our life in more than one way. Have you ever wondered from where this internet came? Let us discuss the brief history of internet and learn how this internet was invented and how it evolved to an extent that now we cannot think of our lives without it.</p><br>
+
+        <p>Russia Launched the world‟s first satellite, SPUTNIK into the space on 4th October, 1957. This was clearly the victory of Russia over the cyber space and as a counter step, Advanced Research Projects Agency, the research arm of Department of Defence, United States, declared the launch of ARPANET(Advanced Research Projects Agency NETwork) in early 1960‟s. This was an experimental network and was designed to keep the computers connected to the this network to communicate with each other even if any of the node, due to the bomb attack, fails to respond.
+          The first message was sent over the ARPANET, a packing switching network, by Leonard Kleinrock's laboratory at University of California, Los Angeles (UCLA). You will be surprised to know that the fist message that was sent over internet was “LO”. Actually they intended to send work “LOGIN” and only the first two letters reached its destination at second network node at Stanford Research Institute (SRI) and before the last three letters could reach the destination the network was down due to glitch. Soon the error was fixed and the message was resent and it.</p><br>
+
+        <p>The major task that ARPANET have to play is to develop rules for communication i.e. protocols for communicating over ARPANET. The ARPANET in particular led to the development of protocols for internet working, in which multiple separate networks could be joined into a network of networks. It resulted in the development if TCP/IP protocol suite, which specifies the rules for joining and communicating over APRANET.</p><br>
+        
+     <!-- Add to Library Button -->
+</div>
+</div>
+
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Toggle button text based on mode
+      var darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+          darkModeToggle.textContent = ' ☀';
+      } else {
+          darkModeToggle.textContent = ' ☽';
+      }
+  }
+
+  // Function to add a book to the library
+  function addToLibrary(bookTitle) {
+      // Get existing library data from local storage
+      var libraryData = localStorage.getItem('library');
+
+      var library = [];
+      if (libraryData) {
+          library = JSON.parse(libraryData);
+      }
+
+      // Check if the library has reached the maximum limit (10 books)
+      if (library.length >= 10) {
+          alert('You have reached the maximum limit of 10 books in your library.');
+          return; // Stop execution if the limit is reached
+      }
+
+      library.push(bookTitle);
+
+      localStorage.setItem('library', JSON.stringify(library));
+
+      alert('The book has been added to your library!');
+
+      displayLibrary();
+  }
+
+  var prevScrollPos = window.pageYOffset;
+  var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+if (window.pageYOffset === 0) {
+    actionButtons.style.top = "10px";
+    actionButtons.style.display = "flex";
+} else {
+    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.display = "none";
+}
+}
+</script>
+</body>
+</html>

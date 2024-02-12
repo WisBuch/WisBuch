@@ -1,0 +1,388 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="icon" href="img/E.jpg" type="image/x-icon">
+        
+
+        <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            }
+            body{
+            background-color: #e6ccb2;
+            overflow-x: hidden;
+            }
+            .hero{
+            width: 100%;
+            height: 100vh;
+            padding: 0% 2%;
+            }
+            nav{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+            nav .logo{
+            width: 200px;
+            cursor: pointer;
+            margin-right: 2%;
+            margin-left: 0%;
+            margin-top: 2%;
+            align-items: left;
+            
+            }
+            nav ul{
+            flex: 1;
+            text-align: right;
+            margin-right: 50px;
+            }
+            nav ul li{
+            list-style: none;
+            display: inline-flex;
+            margin: 30px 30px;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            
+            }
+            nav ul li a{
+            text-decoration: none;
+            color:#7f5539;
+            font-weight: 600;
+            font-size: large;
+            position: relative;
+            padding: 4px;
+            }
+            nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 3px;
+            background: #9c6644;
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s; 
+            }
+            nav a:hover:after {
+            transform-origin: left;
+            transform: scaleX(1);
+        
+            }
+            .hr1 {
+            border-top: 4px solid; 
+            color: #9c6644;
+            width: 100%;
+            margin-left: 0%;
+            margin-bottom: 5px;
+            }
+            .container {
+                position: relative;
+                width: 100%;
+                max-width: 800px;
+                padding-right: 153px;
+            }
+
+            .image1 {
+                height: 200px;
+                width: 199%;
+                z-index: 1;
+                margin-right:0.5%;
+                margin-bottom: 1%;
+                margin-left: 1%;
+                margin-top: 0%;       
+            }
+            .image2{
+            position: absolute;
+                top: 60%;
+                left: 60%; 
+                transform: translate(-50%, -50%);
+                z-index: 2; 
+                width: 60%;
+                max-width: 100%;
+                height: auto;
+            }
+        .wrapper{
+            margin: 50px auto;
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 15px;
+            padding-bottom: 1%;
+
+        }
+        .text-box{
+        color: #5f3e2a;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .text-box p{
+        font-size: 25px;
+        margin-left: 0.5%;
+        margin-top: 25px;
+    }
+
+    .image3{
+        max-width: 100%;
+        float: right;
+        margin-right:0.5%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-top: 0%;
+        height: auto;
+    }
+    
+    .btn{
+        border: 2px solid #7f5539;
+        padding: 8px 35px;
+        color: #7f5539;
+        text-decoration: none;
+        transition: 0.6s ease;
+        font-size: large;
+    }
+    
+    .btn:hover{
+        background-color: #7f5539;
+        color: #e6ccb2;
+    }
+
+        /* Footer styles */
+        footer {
+            background-color: #704d35;
+            color: #f1e0cf;
+            padding: 10px;
+            padding-top: 0.2px;
+            text-align: left;
+            margin-top: 7.5%;
+            margin-right: 0.5%;
+        }
+        footer .logo{
+            width: 200px;
+            cursor: pointer;
+            margin-right: 10%;
+            margin-top: 2%;
+            align-items: left;
+            }
+
+        .footer-content {
+            max-width: 960px;
+            margin: 0 auto;
+            text-align: left;
+            margin-left: 0;
+            
+        }
+
+        .footer-content p {
+            margin: 0;
+            font-size: small;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            
+        }
+        h5{
+        margin-top: 0;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+            border-radius: 25%;
+            line-height: 40px;
+            color: #f1e0cf;
+            text-align: center;
+            font-size: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+
+        .social-icons a img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-icons a:hover {
+            background-color: #f1e0cf;
+        }
+        @media only screen and (max-width: 768px) {
+        /* Styles for screens up to 768px wide */
+        nav ul {
+            flex-direction: column;
+        }
+
+        nav .logo {
+            width: 150px;
+            cursor: pointer;
+            margin-right: 2%;
+            margin-top: 2%;
+            align-items: left; 
+            }
+            nav ul li{
+            list-style: none;
+            display: inline-flex;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            max-width: 75%;
+            }
+            nav ul li a{
+            text-decoration: none;
+            color:#7f5539;
+            font-weight: 600;
+            font-size: small;
+            position: relative;
+            margin-top: 10%;
+            }
+        .text-box p{
+            margin-right: 5%;
+        }
+        .image1{
+                height: 200px;
+                width: auto;
+                z-index: 1;
+                margin-right:0.5%;
+                margin-bottom: 1%;
+                margin-left: 1%;
+                margin-top: 0%;       
+            }
+            .image2{
+            position: absolute;
+                top: 60%;
+                left: 35%; 
+                transform: translate(-50%, -50%);
+                z-index: 2; 
+                width: 60%;
+                max-width: 100%;
+                height: auto;
+            }
+    }
+
+    @media only screen and (max-width: 480px) {
+        nav ul {
+                flex-direction: column;
+                max-width: 100%;
+                
+            }
+
+            nav .logo {
+            width: 100px;
+            cursor: pointer;
+            margin-right: 0%;
+            margin-top: 2%;
+            align-items: left; 
+            }
+            nav ul li{
+            list-style: none;
+            display: inline-flex;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            max-width: 70%;
+            margin-left: 0;
+            
+            
+            }
+            nav ul li a{
+            text-decoration: none;
+            color:#7f5539;
+            font-weight: 600;
+            font-size: small;
+            position: center;
+            margin-top: 10%;
+            }
+            .image1{
+                height: 200px;
+                width: 165%;
+                z-index: 1;
+                margin-right:0.5%;
+                margin-bottom: 1%;
+                margin-left: 1%;
+                margin-top: 0%;       
+            }
+            .image2{
+            position: absolute;
+                top: 60%;
+                left: 35%; 
+                transform: translate(-50%, -50%);
+                z-index: 2; 
+                width: 60%;
+                max-width: 100%;
+                height: auto;
+            }
+    }
+        
+        
+        </style>
+    </head>
+    <body>
+
+
+        <div class="hero">
+            <nav id="navbar">
+                <img src="img/logo.png" class="logo">
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="genre.html">Genres</a></li>
+                <li><a href="library.html">Library</a></li>
+            </ul>
+            </nav>
+            <hr class="hr1">
+            <div class="container">
+                <img src="img/flower.jpg" alt="Image 1" class="image1" width="800  " height="250">
+                <img src="img/logo1.png" alt="Image 2" class="image2" width="800  " height="400">
+            </div>
+
+        <div class="wrapper">
+            <img src="img/imagess.jpg" alt="image 3" class="image3" width="800  " height="250">
+            <div class="text-box">
+                <br><br>
+                <p> Unable to visit the library? <br>
+                    Don't worry; we've got you covered! <br>
+                    WisBuch is a free online platform that you <br>
+                    can visit anytime and anywhere you want!
+                </p>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <h5>SOCIAL</h5>
+                    <a href="https://www.facebook.com/wiscbuch" title="Facebook"><img src="img/fbicon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/wisbuch_?igsh=cW1ubWFidmllYnI1" title="Instagram"><img src="img/igicon.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/BuchWis16667" title="Twitter"><img src="img/xicon.png" alt="Twitter"></a>
+                    <h5>CONTACT US</h5>
+                    <p>wisbuch.2@gmail.com</p><br>
+                    <p>&copy; 2024 WisBuch. For educational purposes only. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer Section -->
+    </body>
+    </html>

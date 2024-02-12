@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languishing</title>
+    <link rel="icon" href="img/W.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .Education3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      h3{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Languishing')">+</button>
+   </div>
+
+      <div class="Education3">
+        <h1>Languishing</h1> <br> 
+        <h2>HOW TO FEEL ALIVE AGAIN IN A WORLD THAT WEARS US DOWN</h2> <br> 
+        <h3> By: Corey Keyes</h3>
+        <p>ABOUT LANGUISHING<br> </br></p>
+        <p>  “With his pioneering research, Corey Keyes put languishing on the map. In this powerful book, he brings it to life. Get ready to rethink your understanding of mental health, update your views on happiness, and come closer to realizing your potential.”—Adam Grant, #1 <i>New York Times bestselling author of Hidden Potential</i> </p></b>
+
+        <p>If you’re muddling through the day in a fog, often forgetting why you walked into a room . . . 
+        If you feel emotionally flattened, lacking the energy to socialize or feel joy in the small things . . . 
+        If you feel an inner void—like something is missing, but you aren’t sure what . . . </p><br>
+          
+        <p>Then this book is for you.</p> <br>
+          
+        <p>Languishing—the state of mental weariness that erodes our self-esteem, motivation, and sense of meaning—can be easy to brush off as the new normal, especially since indifference is one of its symptoms. It is not a synonym for depression and its attendant state of prolonged sadness. Languishers are more likely to feel out of control of their lives, uncertain about what they want from the future, and paralyzed when faced with decisions. Left unchecked, languishing not only impedes our daily functioning but is a gateway to serious mental illness and early mortality.</p><br>
+
+        <p>	Emory University sociologist Corey Keyes has spent his career studying the causes and costs of languishing—the neglected middle child of mental health. Now Keyes has written the first definitive book on the subject, examining the ripple effect of languishing on our lives before deftly diagnosing the larger forces behind its rise: the false promises of the self-help industrial complex, a global moment of intense fear and loss, and a failing healthcare system focused on treating rather than preventing illness. </p><br>
+          
+        <p>Emory University sociologist Corey Keyes has spent his career studying the causes and costs of languishing—the neglected middle child of mental health. Now Keyes has written the first definitive book on the subject, examining the ripple effect of languishing on our lives before deftly diagnosing the larger forces behind its rise: the false promises of the self-help industrial complex, a global moment of intense fear and loss, and a failing healthcare system focused on treating rather than preventing illness.</p><br>
+        <p>Ultimately, Keyes presents a counterintuitive approach to breaking the cycles keeping us stuck and finding a path to true flourishing. Unlike self-improvement systems offering quick-fix mood boosts, his framework focuses on functioning well: taking simple but powerful steps to hold our emotions loosely, becoming more accepting of ourselves and others, and carving out daily moments for the activities that create cycles of meaning, connection, and personal growth.</p><br>
+        <p> <i>Languishing</i> is a must-read for anyone tempted to downplay feelings of demotivation and emptiness as they struggle to haul themselves through the day, and for those eager to build a higher tolerance for adversity and the pressures of modern life. We can expand our vocabulary for describing our inner experiences and deepest needs—and, with it, our potential to flourish.</p><br>
+          
+        <!-- Add to Library Button -->
+</div>
+</div>
+
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Toggle button text based on mode
+      var darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+          darkModeToggle.textContent = ' ☀';
+      } else {
+          darkModeToggle.textContent = ' ☽';
+      }
+  }
+
+  // Function to add a book to the library
+  function addToLibrary(bookTitle) {
+      // Get existing library data from local storage
+      var libraryData = localStorage.getItem('library');
+
+      var library = [];
+      if (libraryData) {
+          library = JSON.parse(libraryData);
+      }
+
+      // Check if the library has reached the maximum limit (10 books)
+      if (library.length >= 10) {
+          alert('You have reached the maximum limit of 10 books in your library.');
+          return; // Stop execution if the limit is reached
+      }
+
+      library.push(bookTitle);
+
+      localStorage.setItem('library', JSON.stringify(library));
+
+      alert('The book has been added to your library!');
+
+      displayLibrary();
+  }
+
+  var prevScrollPos = window.pageYOffset;
+  var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+if (window.pageYOffset === 0) {
+    actionButtons.style.top = "10px";
+    actionButtons.style.display = "flex";
+} else {
+    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.display = "none";
+}
+}
+</script>
+</body>
+</html>

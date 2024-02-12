@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Langgam at si Tipaklong</title>
+    <link rel="icon" href="img/E.jpg" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+      }
+      body.dark-mode {
+        background-color: #222;
+        color: #e6ccb2; /* Change text color for better readability */
+      }
+      .kids1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        padding: 25px;
+        margin-top: 25px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;  
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      .first-letter {
+        font-size: 50px;
+        font-family: serif;
+        font-weight: bolder;
+      }
+      .action-buttons {
+        position: fixed;
+        top: 2px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: top 0.3s; /* Smooth transition for button hide/show */
+        z-index: 1; /* Ensure it's behind h1 */
+      }
+      .action-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #darkModeToggle {
+        background-color: #000;
+        color: #e6ccb2;
+      }
+      #addToLibraryButton {
+        background-color: #000;
+        color: #e6ccb2  ;
+      }
+      body.dark-mode #darkModeToggle {
+        background-color: #e6ccb2;
+        color: #000;
+      }
+      body.dark-mode #addToLibraryButton {
+        background-color: #e6ccb2;
+        color: #000  ;
+      }
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        top: 1px;
+        right: 10px;
+    }
+    h1 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .action-buttons {
+        top: 1px;
+        right: 5px;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+    </style>
+
+</head>
+<body>
+   <!-- Action Buttons -->
+   <div class="action-buttons" id="actionButtons">
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
+       <!-- Add to Library Button -->
+       <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Si Langgam at si Tipaklong')">+</button>
+   </div>
+
+   <div class="kids1">
+    <h1>Si Langgam at si Tipaklong</h1>
+    <h2>by: Aesop</h2> <br> <br>
+    <p><span class="first-letter">M</span>aganda ang panahon. Mainit ang sikat ng araw. Maaga pa lamang ay gising na gising na si Langgam. Nagluto siya at kumain. Ilang sandali 
+        pa, lumakad na siya. Gaya ng dati, naghanap siya ng pagkain. Isang butil ng bigas ang nakita niya. Pinasan niya ito at dinala sa kanyang bahay. 
+        Nakita siya ni Tipaklong. 
+        </p> <br>
+
+        <p>"Magandang umaga kaibigang Langgam," bati ni Tipaklong. "Kay bigat ng iyong dala. Bakit ba wala kanang ginawa kundi maghanap at mag-ipon 
+            ng pagkain?"</p> <br>
+
+        <p>"Oo nga, nag-iipon ako ng pagkain habang maganda ang panahon," sagot ni Langgam.</p> <br>
+
+        <p>"Tumulad ka sa akin, kaibigang Langgam," wika ni Tipaklong. "Habang maganda ang panahon, tayo ay magsaya. Halika, tayo ay lumukso. Tayo 
+            ay kumanta."</p> <br>
+
+        <p>"Ikaw na lang kaibigang Tipaklong," sagot ni Langgam. "Gaya ng sinabi ko sa iyo, habang maganda ang panahon ako ay naghahanap ng pagkain. 
+            Ito'y aking iipunin para ako ay may makain pag sumama ang panahon."</p> <br>
+        
+        <p>Lumipas pa ang maraming araw, dumating na ang tag-ulan. Ulan sa umaga, ulan sa hapon at sa gabi umuulan pa rin. At dumating ang panahong 
+           kumidlat, kumulog at lumakas ang hangin kasabay ang pagbuhos ngmalakas na ulan. Ginaw na ginaw at gutom na gutom ang kaawa-awang 
+           Tipaklong. Naalala niyang puntahanang kaibigang si Langgam. Paglipas ng bagyo, pinilit ni Tipaklong na marating ang bahay ni Langgam. 
+           Bahagya na siyang makalukso. Wala na ang dating sigla ng masayahing si Tipaklong.</p>
+
+        <p>"Tok! Tok! Tok!" </p> <br>
+
+        <p>Nang buksan ni Langgam ang pinto nagulat siya."Aba! Ang aking kaibigan," wika ni Langgam. "Tuloy ka Tipaklong."</p> <br>
+
+        <p>Binigyan ni Langgam ng tuyong damit si Tipaklong. Mabilis na naghanda siya ng pagkain. Ilan pang sandali at magkasalong kumain ng mainit 
+            na pagkain ang magkaibigan.</p> <br>
+
+        <p>"Salamat, kaibigang Langgam," wika ni Tipaklong. "Ngayon ako naniniwala sa iyo. Kailangan nga palang mag-ipon habang maganda ang 
+            panahon at nang may makain pagdating ng tag-gutom."</p> <br>
+
+        <p>Mula noon, nagbago si Tipaklong. Pagdating ng tag-init at habang maganda ang panahon ay kasama nasiya ng kanyang kaibigang si Langgam. 
+            Natuto siyang gumawa at higit sa lahat natuto siyang mag-impok.</p><br>
+        
+        <p><span class="lesson">ARAL:</span> <br>
+            <i>habang maganda ang sitwasyon upang maging handa sa anumang suliranin sa hinaharap.</i>  </p>
+
+
+      <!-- Add to Library Button -->
+</div>
+    </div>
+
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+          var body = document.body;
+          body.classList.toggle('dark-mode');
+
+          // Toggle button text based on mode
+          var darkModeToggle = document.getElementById('darkModeToggle');
+          if (body.classList.contains('dark-mode')) {
+              darkModeToggle.textContent = ' ☀';
+          } else {
+              darkModeToggle.textContent = ' ☽';
+          }
+      }
+
+      // Function to add a book to the library
+      function addToLibrary(bookTitle) {
+          // Get existing library data from local storage
+          var libraryData = localStorage.getItem('library');
+
+          var library = [];
+          if (libraryData) {
+              library = JSON.parse(libraryData);
+          }
+
+          // Check if the library has reached the maximum limit (10 books)
+          if (library.length >= 10) {
+              alert('You have reached the maximum limit of 10 books in your library.');
+              return; // Stop execution if the limit is reached
+          }
+
+          library.push(bookTitle);
+
+          localStorage.setItem('library', JSON.stringify(library));
+
+          alert('The book has been added to your library!');
+
+          displayLibrary();
+      }
+
+      var prevScrollPos = window.pageYOffset;
+      var actionButtons = document.getElementById("actionButtons");
+
+window.onscroll = function() {
+    if (window.pageYOffset === 0) {
+        actionButtons.style.top = "10px";
+        actionButtons.style.display = "flex";
+    } else {
+        actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+        actionButtons.style.display = "none";
+    }
+}
+  </script>
+</body>
+</html>
