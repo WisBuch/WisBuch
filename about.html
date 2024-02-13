@@ -153,8 +153,86 @@
         border-radius: 5px;
         margin-right: 50px;
         margin-bottom: 20px;
-    
    }
+   .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+        margin-top: 3%
+    }
+    /* Create two equal columns that sits next to each other */
+    .column {
+        flex: 32%;
+        max-width: 32%;
+       margin-left: 1%;
+       margin-bottom: 5%;
+        
+    }
+    /* Style the card */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 15px;
+    }
+    .container {
+        padding: 16px;
+    }
+    /* Style the title */
+    .title {
+        color: grey;
+    }
+    /* Style the button */
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #704d35;
+        text-align: center;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #555;
+    }
+    .team h1 {
+    margin-top: 5%; /* Adjust this value as needed */
+    text-align:  center;
+    color: #704d35;
+    font-size: 400%;
+    margin-right: 10%;
+    }
+    .team h2 {
+        margin-top: 5%; /* Adjust this value as needed */
+        text-align: center;
+        color: #704d35;
+        font-size: 250%;
+    }
+    .team p{
+        margin-bottom: 2%;
+    }
+    .team img{
+        border-radius: 15px 15px 0 0;
+    }
+    .team .team-social-icons a {
+    display: inline-block;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin: 0 5px;
+    border-radius: 15%;
+    line-height: 40px;
+    color: #f1e0cf;
+    text-align: center;
+    font-size: 24px; /* Adjust font size as needed */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+    
+
    /* Footer styles */
    footer {
         background-color: #704d35;
@@ -164,6 +242,7 @@
         text-align: left;
         margin-top: 0%;
         margin-right: 0.5%;
+        max-width: 900%;
     }
 
     .footer-content {
@@ -211,12 +290,7 @@
     .social-icons a:hover {
         background-color: #f1e0cf;
     }
-    .image4:hover,
-    .image5:hover,
-    .image6:hover {
-        transform: scale(1.1); /* Adjust the scale factor as needed */
-        transition: transform 0.3s ease; /* Add a smooth transition */
-    }
+    
     @media only screen and (max-width: 768px) {
       /* Styles for screens up to 768px wide */
       nav ul {
@@ -248,53 +322,14 @@
       .text-box p{
           margin-right: 5%;
       }
-      .sticky nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sticky nav ul li {
-    display: inline-block;
-    margin: 0 10px; /* Adjust as needed */
-}
-
-.sticky nav ul li a {
-    text-decoration: none;
-    color: #7f5539;
-    font-weight: 600;
-    font-size: large;
-    position: relative;
-    padding: 4px;
-}
-
-.sticky nav ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    width: 100%;
-    height: 3px;
-    background: #9c6644;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s; 
-}
-
-.sticky nav a:hover:after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
+    
 }
 
 @media only screen and (max-width: 480px) {
     nav ul {
             flex-direction: column;
-            max-width: 100%;
-            
+            max-width: 100%; 
         }
-
         nav .logo {
         width: 100px;
         cursor: pointer;
@@ -318,7 +353,152 @@
         position: center;
         margin-top: 10%;
         }
+        h1{
+        color: #5f3e2a ;
+        padding-left: 15%;
+        padding-top: 50px;
+        }
+        h2{
+        color: #5f3e2a ;
+        padding-left: 15%;
+        padding-top: 5%;
+        }
+        h1{
+    color: #5f3e2a ;
+    padding-left: 10%;
+    padding-top: 50px;
+  }
+   h2{
+    color: #5f3e2a ;
+    text-align: left;
+    margin-bottom: 3%;
+    font-size: large;
+    margin-top: 10%;
+   }
+
+   .wrapper{
+        margin: 50px auto;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 25px;
+        padding: 5%;
+        padding-top: 0;
+        padding-bottom: 5%;
+
+   }
+   .image4{
+        max-width: 100%;
+        float: center;
+        border: 3px solid #7f5539;
+        border-radius: 5px;
+        margin-right: 27px;
+        margin-bottom: 5px;
+   }
+
+   .text-box{
+    color: #5f3e2a;
+    max-width: 100%;
+    
+   }
+
+   .text-box p{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 2%;
+   }
+
+   .image5{
+    max-width: 100%;
+    border: 3px solid #7f5539;
+    border-radius: 5px;
+    margin-right: 15%;
+    margin-bottom: 5px;
+    margin-left: 1%;
+
+   }
+
+   .image6 {
+    max-width: 100%;
+    border: 3px solid #7f5539;
+    border-radius: 5px;
+    margin-right: 15%;
+    margin-bottom: 5px;
+    margin-left: 1%;
+   }
+   .row {
+    padding: 2%;
+
+        margin-top: 3%;
+    }
+    /* Create two equal columns that sits next to each other */
+    .column {
+        flex: 15%;
+        max-width: 25%;
+       margin-left: 5%;
+        
+    }
+    /* Style the card */
+    .card {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        margin: 5%;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    .container {
+        padding: 10px;
+    }
+    /* Style the title */
+    .title {
+        color: grey;
+    }
+    /* Style the button */
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        color: white;
+        background-color: #704d35;
+        text-align: center;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #555;
+    }
+    .team h1 {
+    margin-top: 2%; /* Adjust this value as needed */
+    text-align:  center;
+    color: #704d35;
+    font-size: 150%;
+    margin-right: 15%;
+    }
+    .team h2 {
+        margin-top: 5%; /* Adjust this value as needed */
+        color: #704d35;
+        font-size: 90%;
+
+    }
+    .team p{
+        margin-bottom: 2%;
+
+    }
+    .team .team-social-icons a {
+    display: inline-block;
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    margin: 0 5px;
+    border-radius: 15%;
+    line-height: 40px;
+    color: #f1e0cf;
+    text-align: center;
+    font-size: 24px; /* Adjust font size as needed */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
+   }
+    
+    
 
     </style>
 </head>
@@ -389,6 +569,93 @@
 
             </div>
         </div>
+
+        <div class="team">
+            <h1>✧˖°. Meet Our Team ✧˖°.</h1>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h2>Trixie Morales</h2>
+                            <p class="title">CEO & Founder</p>
+                            <div class="social-icons team-social-icons">
+                                <a href="https://www.facebook.com/Ychinnn" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/example" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="column">
+                    <div class="card">
+                        <img src="img/raven.jpg" alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h2>Raven Baliciado</h2>
+                            <p class="title">Art Director</p>                   
+                            <div class="social-icons team-social-icons">
+                                <a href="https://www.facebook.com/vena1121" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/_def.ven/" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                        <img src="img/" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Hanna Sarabia</h2>
+                            <p class="title">Designer</p>
+                            <div class="social-icons team-social-icons">
+                                <a href="https://www.facebook.com/HANNAKYUT0324" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/example" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Nikki De Guzman</h2>
+                            <p class="title">Designer</p>
+                            <div class="social-icons team-social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100076915576200" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/example" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="img/JA.jpg" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Janelle Bautista</h2>
+                            <p class="title">Designer</p>
+                            <div class="social-icons team-social-icons">
+                                <a href="https://www.facebook.com/ajhay.bautista.900" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/example" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Kier Tomino</h2>
+                            <p class="title">Designer</p>
+                            <div class="social-icons team-social-icons">
+                                <a href="https://www.facebook.com/kier.tomino.96" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/example" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
         <script>
           window.onscroll = function() {myFunction()};
   

@@ -138,6 +138,13 @@
           height: auto;
           cursor: pointer;
           margin-left: 16%;
+          transition: transform 0.3s ease-in-out;
+          
+          box-shadow: 10px 10px 5px black;
+        }
+        .gallery img:hover {
+          /* Scale up the image slightly on hover */
+          transform: scale(1.05);
         }
         .tab-content.active {
           display: block;
@@ -249,6 +256,7 @@
           height: auto;
           cursor: pointer;
           margin-left: 35%;
+          box-shadow: 10px 10px 5px black;
         }
         
 }
