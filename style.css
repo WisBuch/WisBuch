@@ -6,15 +6,18 @@
 
 body {
     overflow-x: hidden;
+    background-image: url('img/pic1.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px); /* Add blur effect */
+    
 }
-
 .hero {
     width: 100%;
     padding: 0 2%;
     position: relative;
     height: 100vh;
 }
-
 nav {
     width: 100%;
         height: 15%;
@@ -23,32 +26,26 @@ nav {
         justify-content: space-between;
         }
     nav .logo{
-        width: 200px;
+        width: 150px;
         cursor: pointer;
         margin-right: 10%;
         margin-top: 2%;
         align-items: left;
         
         }
-.hr1 {
-    border-top: 4px solid; 
-    color: #9c6644;
-    width: 100%;
-    margin-left: 0%;
-    margin-bottom: 5px;
-    }
 
     .content {
-        position: absolute;
-        top: 50%;
+        margin-top: 20%;
         left: 5%; 
         transform: translateY(-50%);
-        text-align: left;
+        text-align: center;
         color: #f0e2d3;
+        font-size: xx-large;
     }
 
     .title h1 {
-        margin-top: 50%; 
+        margin-top: 2%;
+        text-align: center;
     }
     
     p {
@@ -56,9 +53,10 @@ nav {
         margin-top: 10px; 
         
     }
+
     
     .button {
-        margin-top: 30%; 
+        margin-top: 10%; 
         margin-left: 1%; 
     }
 
@@ -81,44 +79,36 @@ nav {
 .btn:hover {
     background-color: #f0e2d3;
     color: #7f5539;
+    border-radius: 12px;
 }
 /* Footer styles */
+/* Footer styles */
 footer {
+    position: fixed;
+    width: 100%;
+    height: 30%;
     background-color: #704d35;
     color: #f1e0cf;
-    padding: 10px;
-    padding-top: 0.2px;
     text-align: left;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-bottom: 1%;
 }
-footer .logo{
-    width: 200px;
-    cursor: pointer;
-    margin-right: 10%;
-    margin-top: 2%;
-    align-items: left;
-    }
 
 .footer-content {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: left;
-    margin-left: 0;
-    
+    max-width: 500px;
+    margin-left: 5%;
 }
 
 .footer-content p {
-    margin: 0;
     font-size: small;
+    margin-bottom: 10px; /* Adjust margin to change height */
 }
 
 .social-icons {
-    margin-top: 20px;
-    
+    margin-top: 30px; /* Adjust margin to change height */
 }
-h5{
-  margin-top: 0;
+
+h5 {
+    margin-top: 0;
 }
 
 .social-icons a {
@@ -146,6 +136,7 @@ h5{
     background-color: #f1e0cf;
 }
 
+
 /* For phones and smaller devices */
 @media only screen and (max-width: 768px) {
     .image {
@@ -154,35 +145,135 @@ h5{
         object-fit: fill;
         object-position: left;
     }
-    p {
+    .content {
+        margin-top: 75%;
+        left: 5%; 
+        transform: translateY(-50%);
+        text-align: center;
+        color: #f0e2d3;
+        font-size: x-large;
+    }
+
+    .title h1 {
+        margin-top: 1%;
+        text-align: center;
+    }
+    
+    .p {
         font-size: x-large;
         margin-top: 10px; 
-        max-width: 50%; 
+    }
+    .button {
+        margin-top: 10%; 
+        margin-left: 1%; 
+    }
+    .btn {
+        border: 2px solid #f0e2d3;
+        padding: 8px 20px;
+        color: #f0e2d3;
+        text-decoration: none;
+        transition: 0.6s ease;
+        font-size: 1em;
     }
     footer {
+        position: fixed;
+        width: 100%;
+        height: 25%;
         background-color: #704d35;
         color: #f1e0cf;
-        padding: 10px;
-        padding-top: 0.2px;
         text-align: left;
-        margin-right: 2%;
-        margin-left: 2%;
+        margin-bottom: 1%;
+
     }
+    
+    .footer-content {
+        max-width: 500px;
+        margin-left: 5%;
+    }
+    
     .footer-content p {
-        margin: 0;
-        max-width: 100%;
-        margin-top: 0;
+        font-size: small;
+        margin-bottom: 10px; /* Adjust margin to change height */
     }
+    
+    .social-icons {
+        margin-top: 50px; /* Adjust margin to change height */
+    }
+    .social-icons a:hover {
+        background-color: #f1e0cf;
+    }
+
+    
+
+    
 }
 
 /* For laptops and larger devices */
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 480px) {
     .image {
         width: 100%;
         max-height: 80vh; 
         object-fit: fill;
         object-position: left;
     }
+    .content {
+        margin-top: 75%;
+        left: 5%; 
+        transform: translateY(-50%);
+        text-align: center;
+        color: #f0e2d3;
+        font-size: x-large;
+    }
+
+    .title h1 {
+        margin-top: 1%;
+        text-align: center;
+    }
+    
+    .p {
+        font-size: x-large;
+        margin-top: 10px; 
+    }
+    .button {
+        margin-top: 10%; 
+        margin-left: 1%; 
+    }
+    .btn {
+        border: 2px solid #f0e2d3;
+        padding: 8px 20px;
+        color: #f0e2d3;
+        text-decoration: none;
+        transition: 0.9s ease;
+        font-size: 1em;
+    }
+    footer {
+        position: fixed;
+        width: 100%;
+        height: 25%;
+        background-color: #704d35;
+        color: #f1e0cf;
+        text-align: left;
+        margin-bottom: 1%;
+
+    }
+    
+    .footer-content {
+        max-width: 500px;
+        margin-left: 5%;
+    }
+    
+    .footer-content p {
+        font-size: small;
+        margin-bottom: 10px; /* Adjust margin to change height */
+    }
+    
+    .social-icons {
+        margin-top: 50px; /* Adjust margin to change height */
+    }
+    .social-icons a:hover {
+        background-color: #f1e0cf;
+    }
+
     
 }
 
