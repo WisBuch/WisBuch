@@ -18,7 +18,7 @@
       }
       body.dark-mode {
         background-color: #222;
-        color: #e6ccb2; /* Change text color for better readability */
+        color: #e6ccb2;
       }
       .education8 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular';
@@ -46,8 +46,8 @@
         display: flex;
         flex-direction: column;
         gap: 3px;
-        transition: top 0.3s; /* Smooth transition for button hide/show */
-        z-index: 1; /* Ensure it's behind h1 */
+        transition: top 0.3s;
+        z-index: 1;
       }
       .action-button {
         padding: 10px 20px;
@@ -71,33 +71,30 @@
         background-color: #e6ccb2;
         color: #000  ;
       }
-@media screen and (max-width: 768px) {
-    .action-buttons {
-        top: 1px;
-        right: 10px;
-    }
-    h1 {
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .action-buttons {
-        top: 1px;
-        right: 5px;
-    }
-    h1 {
-        margin-top: 20px;
-    }
-}
+          @media screen and (max-width: 768px) {
+              .action-buttons {
+                  top: 1px;
+                  right: 10px;
+              }
+              h1 {
+                  margin-top: 40px;
+              }
+          }
+          @media screen and (max-width: 480px) {
+              .action-buttons {
+                  top: 1px;
+                  right: 5px;
+              }
+              h1 {
+                  margin-top: 20px;
+              }
+          }
     </style>
 
 </head>
 <body>
-   <!-- Action Buttons -->
    <div class="action-buttons" id="actionButtons">
-       <!-- Dark Mode Toggle Button -->
        <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
-       <!-- Add to Library Button -->
        <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Introduction to Programming Using Java')">+</button>
    </div>
 
@@ -119,18 +116,14 @@
         <p>Machine language instructions are expressed as binary numbers. A binary number is made up of just two possible digits, zero and one. So, a machine language instruction is just a sequence of zeros and ones. Each particular sequence encodes some particular instruction. The data that the computer manipulates is also encoded as binary numbers. A computer can work directly with binary numbers because switches can readily represent such numbers: Turn the switch on to represent a one; turn it off to represent a zero. Machine language instructions are stored in memory as patterns of switches turned on or off. When a machine language instruction is loaded into the CPU, all that happens is that certain switches are turned on or off in the pattern that encodes that particular instruction. The CPU is built to respond to this pattern by executing the instruction it encodes; it does this simply because of the way all the other switches in the CPU are wired together.</p><br>
 
         <p>So, you should understand this much about how computers work: Main memory holds machine language programs and data. These are encoded as binary numbers. The CPU fetches machine language instructions from memory one after another and executes them. It does this mechanically, without thinking about or understanding what it does—and therefore the program it executes must be perfect, complete in all details, and unambiguous because the CPU can do nothing but execute it exactly as written.</p><br> 
-
-        <!-- Add to Library Button -->
 </div>
 </div>
 
 <script>
-  // Function to toggle dark mode
   function toggleDarkMode() {
       var body = document.body;
       body.classList.toggle('dark-mode');
 
-      // Toggle button text based on mode
       var darkModeToggle = document.getElementById('darkModeToggle');
       if (body.classList.contains('dark-mode')) {
           darkModeToggle.textContent = ' ☀';
@@ -139,9 +132,7 @@
       }
   }
 
-  // Function to add a book to the library
   function addToLibrary(bookTitle) {
-      // Get existing library data from local storage
       var libraryData = localStorage.getItem('library');
 
       var library = [];
@@ -149,10 +140,9 @@
           library = JSON.parse(libraryData);
       }
 
-      // Check if the library has reached the maximum limit (10 books)
       if (library.length >= 10) {
           alert('You have reached the maximum limit of 10 books in your library.');
-          return; // Stop execution if the limit is reached
+          return;
       }
 
       library.push(bookTitle);
@@ -172,7 +162,7 @@ if (window.pageYOffset === 0) {
     actionButtons.style.top = "10px";
     actionButtons.style.display = "flex";
 } else {
-    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.top = "-50px";
     actionButtons.style.display = "none";
 }
 }

@@ -7,104 +7,97 @@
     <link rel="icon" href="img/E.jpg" type="image/x-icon">
 
     <style>
-        
-        * {
-          margin: 0px;
-          padding: 0px;
-          box-sizing: border-box;
-        }
-        body{
-          background-color: #e6ccb2;
-          overflow-x: hidden;
-        }
-        .hero{
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #e6ccb2;
+        overflow-x: hidden;
+    }
+    .hero{
         width: 100%;
         height: 100vh;
         padding: 0% 2%;
-        }
-        nav{
+    }
+    nav{
         width: 100%;
         height: 15%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        }
-        nav .logo {
+    }
+    nav .logo {
         width: 200px;
         cursor: pointer;
         margin-right: 2%;
         margin-top: 2%;
         align-items: left; 
-        }
-
-        nav .logo a {
-            display: inline-block;
-            text-decoration: none;
-            color: inherit;
-        }
-        nav .logo img {
-            width: 100%; 
-            height: auto; 
-        }
-
-        nav ul{
+    }
+    nav .logo a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+    }
+    nav .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+    nav ul{
         flex: 1;
         text-align: right;
         margin-right: 50px;
-        }
-        nav ul li{
+    }
+    nav ul li{
         list-style: none;
         display: inline-flex;
         margin: 30px 30px;
         margin-bottom: 0%;
         margin-right: 0%;
-        
-        }
-        nav ul li a{
+    }
+    nav ul li a{
         text-decoration: none;
         color:#7f5539;
         font-weight: 600;
         font-size: large;
         position: relative;
         padding: 4px;
-        }
-        nav ul li a::after {
+    }
+    nav ul li a::after {
         content: '';
-          position: absolute;
-          left: 0;
-          bottom: 1px;
-          width: 100%;
-          height: 3px;
-          background: #9c6644;
-          border-radius: 5px;
-          transform-origin: right;
-          transform: scaleX(0);
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        width: 100%;
+        height: 3px;
+        background: #9c6644;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
         transition: transform .5s; 
-        }
-        nav a:hover:after {
-          transform-origin: left;
-          transform: scaleX(1);
-      
-        }
-        .hr1 {
+    }
+    nav a:hover:after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .hr1 {
         border-top: 4px solid; 
         color: #9c6644;
         width: 100%;
         margin-left: 0%;
         margin-bottom: 5px;
-        }
-
-  h1{
-    color: #5f3e2a ;
-    padding-left: 10%;
-    padding-top: 50px;
-  }
+    }
+    h1{
+        color: #5f3e2a ;
+        padding-left: 10%;
+        padding-top: 50px;
+    }
    h2{
-    color: #5f3e2a ;
-    text-align: left;
-    margin-bottom: 2%;
+        color: #5f3e2a ;
+        text-align: left;
+        margin-bottom: 2%;
    }
-
    .wrapper{
         margin: 50px auto;
         width: 100%;
@@ -113,7 +106,6 @@
         padding: 10%;
         padding-top: 0;
         padding-bottom: 0%;
-
    }
    .image4{
         max-width: 100%;
@@ -123,31 +115,25 @@
         margin-right: 25px;
         margin-bottom: 5px;
    }
-
    .text-box{
-    color: #5f3e2a;
-    max-width: 100%;
-    
+        color: #5f3e2a;
+        max-width: 100%;
    }
-
    .text-box p{
-    font-size: 16px;
-    text-align: justify;
+        font-size: 16px;
+        text-align: justify;
    }
-
    .image5{
-    max-width: 100%;
-    float: right;
-    border: 3px solid #7f5539;
-    border-radius: 5px;
-    margin-right: 1%;
-    margin-bottom: 5px;
-    margin-left: 1%;
-
+        max-width: 100%;
+        float: right;
+        border: 3px solid #7f5539;
+        border-radius: 5px;
+        margin-right: 1%;
+        margin-bottom: 5px;
+        margin-left: 1%;
    }
-
    .image6 {
-    max-width: 100%;
+        max-width: 100%;
         float: left;
         border: 3px solid #7f5539;
         border-radius: 5px;
@@ -160,15 +146,12 @@
         padding: 2%;
         margin-top: 3%
     }
-    /* Create two equal columns that sits next to each other */
     .column {
         flex: 25%;
         max-width: 16%;
-       margin-bottom: 5%;
-       margin-left: 0.6%;
-        
+        margin-bottom: 5%;
+        margin-left: 0.6%;
     }
-    /* Style the card */
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         margin: 8px;
@@ -179,11 +162,9 @@
     .container {
         padding: 16px;
     }
-    /* Style the title */
     .title {
         color: grey;
     }
-    /* Style the button */
     .button {
         border: none;
         outline: 0;
@@ -198,14 +179,14 @@
         background-color: #555;
     }
     .team h1 {
-    margin-top: 5%; /* Adjust this value as needed */
-    text-align:  center;
-    color: #704d35;
-    font-size: 400%;
-    margin-right: 10%;
+        margin-top: 5%; 
+        text-align:  center;
+        color: #704d35;
+        font-size: 400%;
+        margin-right: 10%;
     }
     .team h2 {
-        margin-top: 5%; /* Adjust this value as needed */
+        margin-top: 5%; 
         text-align: center;
         color: #704d35;
         font-size: 245%;
@@ -217,294 +198,268 @@
         border-radius: 15px 15px 0 0;
     }
     .team .team-social-icons a {
-    display: inline-block;
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
-    margin: 0 5px;
-    border-radius: 15%;
-    line-height: 40px;
-    color: #f1e0cf;
-    text-align: center;
-    font-size: 24px; /* Adjust font size as needed */
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-    
-
-   /* Footer styles */
+        display: inline-block;
+        width: 40px; 
+        height: 40px; 
+        margin: 0 5px;
+        border-radius: 15%;
+        line-height: 40px;
+        color: #f1e0cf;
+        text-align: center;
+        font-size: 24px; 
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
    footer {
-    position: bottom;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #704d35;
-    color: #f1e0cf;
-    padding: 10px;
-    text-align: left;
-}
+        position: bottom;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #704d35;
+        color: #f1e0cf;
+        padding: 10px;
+        text-align: left;
+    }
+    .footer-content {
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: left;
+        margin-left: 0;
+    }
+    .footer-content p {
+        margin: 0;
+        font-size: small;
+    }
+    .social-icons {
+        margin-top: 20px;
+    }
+    h5 {
+        margin-top: 0;
+    }
+    .social-icons a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 25%;
+        line-height: 40px;
+        color: #f1e0cf;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }   
+    .social-icons a img {
+        width: 100%;
+        height: auto;
+    }
+    .social-icons a:hover {
+        background-color: #f1e0cf;
+    }
+        @media only screen and (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
 
-.footer-content {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: left;
-    margin-left: 0;
-}
-
-.footer-content p {
-    margin: 0;
-    font-size: small;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-h5 {
-    margin-top: 0;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin: 0 5px;
-    border-radius: 25%;
-    line-height: 40px;
-    color: #f1e0cf;
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-
-.social-icons a img {
-    width: 100%;
-    height: auto;
-}
-
-.social-icons a:hover {
-    background-color: #f1e0cf;
-}
-    
-    @media only screen and (max-width: 768px) {
-      /* Styles for screens up to 768px wide */
-      nav ul {
-        flex-direction: column;
+        nav .logo {
+            width: 150px;
+            cursor: pointer;
+            margin-right: 2%;
+            margin-top: 2%;
+            align-items: left; 
+            }
+            nav ul li{
+            list-style: none;
+            display: inline-flex;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            max-width: 75%;
+            }
+            nav ul li a{
+            text-decoration: none;
+            color:#7f5539;
+            font-weight: 600;
+            font-size: small;
+            position: relative;
+            margin-top: 10%;
+            }
+        .text-box p{
+            margin-right: 5%;
+        }
+        
     }
 
-    nav .logo {
-        width: 150px;
-        cursor: pointer;
-        margin-right: 2%;
-        margin-top: 2%;
-        align-items: left; 
-        }
-        nav ul li{
-        list-style: none;
-        display: inline-flex;
-        margin-bottom: 0%;
-        margin-right: 0%;
-        max-width: 75%;
-        }
-        nav ul li a{
-        text-decoration: none;
-        color:#7f5539;
-        font-weight: 600;
-        font-size: small;
-        position: relative;
-        margin-top: 10%;
-        }
-      .text-box p{
-          margin-right: 5%;
-      }
-    
-}
-
-@media only screen and (max-width: 480px) {
-    nav ul {
+    @media only screen and (max-width: 480px) {
+        nav ul {
             flex-direction: column;
             max-width: 100%; 
         }
         nav .logo {
-        width: 100px;
-        cursor: pointer;
-        margin-right: 0%;
-        margin-top: 2%;
-        align-items: left; 
+            width: 100px;
+            cursor: pointer;
+            margin-right: 0%;
+            margin-top: 2%;
+            align-items: left; 
         }
         nav ul li{
-        list-style: none;
-        display: inline-flex;
-        margin-bottom: 0%;
-        margin-right: 0%;
-        max-width: 70%;
-        margin-left: 0;
+            list-style: none;
+            display: inline-flex;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            max-width: 70%;
+            margin-left: 0;
         }
         nav ul li a{
-        text-decoration: none;
-        color:#7f5539;
-        font-weight: 600;
-        font-size: small;
-        position: center;
-        margin-top: 10%;
+            text-decoration: none;
+            color:#7f5539;
+            font-weight: 600;
+            font-size: small;
+            position: center;
+            margin-top: 10%;
         }
         h1{
-        color: #5f3e2a ;
-        padding-left: 15%;
-        padding-top: 50px;
+            color: #5f3e2a ;
+            padding-left: 15%;
+            padding-top: 50px;
         }
         h2{
-        color: #5f3e2a ;
-        padding-left: 15%;
-        padding-top: 5%;
+            color: #5f3e2a ;
+            padding-left: 15%;
+            padding-top: 5%;
         }
         h1{
-    color: #5f3e2a ;
-    padding-left: 10%;
-    padding-top: 50px;
-  }
-   h2{
-    color: #5f3e2a ;
-    text-align: left;
-    margin-bottom: 3%;
-    font-size: large;
-    margin-top: 10%;
-   }
-
-   .wrapper{
-        margin: 50px auto;
-        width: 100%;
-        margin-left: 0%;
-        margin-top: 25px;
-        padding: 5%;
-        padding-top: 0;
-        padding-bottom: 5%;
-
-   }
-   .image4{
-        max-width: 100%;
-        float: center;
-        border: 3px solid #7f5539;
-        border-radius: 5px;
-        margin-right: 27px;
-        margin-bottom: 5px;
-   }
-
-   .text-box{
-    color: #5f3e2a;
-    max-width: 100%;
-    
-   }
-
-   .text-box p{
-    font-size: 16px;
-    text-align: justify;
-    margin-bottom: 2%;
-   }
-
-   .image5{
-    max-width: 100%;
-    border: 3px solid #7f5539;
-    border-radius: 5px;
-    margin-right: 15%;
-    margin-bottom: 5px;
-    margin-left: 1%;
-
-   }
-
-   .image6 {
-    max-width: 100%;
-    border: 3px solid #7f5539;
-    border-radius: 5px;
-    margin-right: 15%;
-    margin-bottom: 5px;
-    margin-left: 1%;
-   }
-   .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2%;
-        margin-top: 3%
+            color: #5f3e2a ;
+            padding-left: 10%;
+            padding-top: 50px;
+        }
+        h2{
+            color: #5f3e2a ;
+            text-align: left;
+            margin-bottom: 3%;
+            font-size: large;
+            margin-top: 10%;
+        }
+        .wrapper{
+            margin: 50px auto;
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 25px;
+            padding: 5%;
+            padding-top: 0;
+            padding-bottom: 5%;
+        }
+        .image4{
+            max-width: 100%;
+            float: center;
+            border: 3px solid #7f5539;
+            border-radius: 5px;
+            margin-right: 27px;
+            margin-bottom: 5px;
+        }
+        .text-box{
+            color: #5f3e2a;
+            max-width: 100%;
+        }
+        .text-box p{
+            font-size: 16px;
+            text-align: justify;
+            margin-bottom: 2%;
+        }
+        .image5{
+            max-width: 100%;
+            border: 3px solid #7f5539;
+            border-radius: 5px;
+            margin-right: 15%;
+            margin-bottom: 5px;
+            margin-left: 1%;
+        }
+        .image6 {
+            max-width: 100%;
+            border: 3px solid #7f5539;
+            border-radius: 5px;
+            margin-right: 15%;
+            margin-bottom: 5px;
+            margin-left: 1%;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2%;
+            margin-top: 3%
+        }
+        .column {
+            flex: 30%;
+            max-width: 30%;
+            margin-bottom: 5%;
+            margin-left: 13%;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+        }
+        .container {
+            padding: 16px;
+        }
+        .title {
+            color: grey;
+        }
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #704d35;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        .team h1 {
+            margin-top: 5%; 
+            text-align:  center;
+            color: #704d35;
+            font-size: 175%;
+            margin-right: 10%;
+        }
+        .team h2 {
+            margin-top: 5%; 
+            color: #704d35;
+            font-size: 95%;
+            padding-right: 100%;
+        }
+        .team p{
+            margin-bottom: 2%;
+        }
+        .team img{
+            border-radius: 15px 15px 0 0;
+        }
+        .team .team-social-icons a {
+            display: inline-block;
+            width: 40px; /* Adjust width as needed */
+            height: 40px; /* Adjust height as needed */
+            margin: 0 5px;
+            border-radius: 15%;
+            line-height: 40px;
+            color: #f1e0cf;
+            text-align: center;
+            font-size: 24px; /* Adjust font size as needed */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
     }
-    /* Create two equal columns that sits next to each other */
-    .column {
-        flex: 30%;
-        max-width: 30%;
-       margin-bottom: 5%;
-       margin-left: 13%;
-        
-    }
-    /* Style the card */
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin: 8px;
-        text-align: center;
-        background-color: #ffffff;
-        border-radius: 15px;
-    }
-    .container {
-        padding: 16px;
-    }
-    /* Style the title */
-    .title {
-        color: grey;
-    }
-    /* Style the button */
-    .button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #704d35;
-        text-align: center;
-        cursor: pointer;
-    }
-    .button:hover {
-        background-color: #555;
-    }
-    .team h1 {
-    margin-top: 5%; /* Adjust this value as needed */
-    text-align:  center;
-    color: #704d35;
-    font-size: 175%;
-    margin-right: 10%;
-    }
-    .team h2 {
-        margin-top: 5%; /* Adjust this value as needed */
-        color: #704d35;
-        font-size: 95%;
-        padding-right: 100%;
-    }
-    .team p{
-        margin-bottom: 2%;
-    }
-    .team img{
-        border-radius: 15px 15px 0 0;
-    }
-    .team .team-social-icons a {
-    display: inline-block;
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
-    margin: 0 5px;
-    border-radius: 15%;
-    line-height: 40px;
-    color: #f1e0cf;
-    text-align: center;
-    font-size: 24px; /* Adjust font size as needed */
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-   }
     
     
-
     </style>
 </head>
 <body>
@@ -571,7 +526,6 @@ h5 {
                         <li>To promote and acknowledge Filipino Culture/ Literature</li>
                       </ul>
                     </p><br><br><br><b><i>It is timely and relevant to have WisBuch...</i></b>
-
             </div>
         </div>
 
@@ -580,12 +534,12 @@ h5 {
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <img src="img/trixie.jpg" alt="Jane" style="width:100%">
+                        <img src="img/trixie.jpg" alt="Trixie" style="width:100%">
                         <div class="container">
                             <h2>Trixie Morales</h2>
                             <div class="social-icons team-social-icons">
                                 <a href="https://www.facebook.com/Ychinnn" title="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
-                                <a href="https://www.instagram.com/example" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+                                <a href="https://www.instagram.com/ychi_anniyooo/" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
                             </div>
                         </div>
                     </div>
@@ -593,7 +547,7 @@ h5 {
         
                 <div class="column">
                     <div class="card">
-                        <img src="img/raven.jpg" alt="Mike" style="width:100%">
+                        <img src="img/raven.jpg" alt="Raven" style="width:100%">
                         <div class="container">
                             <h2>Raven Baliciado</h2>
                             <div class="social-icons team-social-icons">
@@ -606,7 +560,7 @@ h5 {
                 
                 <div class="column">
                     <div class="card">
-                        <img src="img/hanna.png" alt="John" style="width:100%">
+                        <img src="img/hanna.png" alt="Hanna" style="width:100%">
                         <div class="container">
                             <h2>Hanna Sarabia</h2>
                             <div class="social-icons team-social-icons">
@@ -619,7 +573,7 @@ h5 {
 
                 <div class="column">
                     <div class="card">
-                        <img src="img/nikki.png" alt="John" style="width:100%">
+                        <img src="img/nikki.png" alt="Nikki" style="width:100%">
                         <div class="container">
                             <h2>Nikki D.G.</h2>
                             <div class="social-icons team-social-icons">
@@ -632,7 +586,7 @@ h5 {
 
                 <div class="column">
                     <div class="card">
-                        <img src="img/JA.jpg" alt="John" style="width:100%">
+                        <img src="img/JA.jpg" alt="JA" style="width:100%">
                         <div class="container">
                             <h2>Janelle Bautista</h2>
                             <div class="social-icons team-social-icons">
@@ -644,7 +598,7 @@ h5 {
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="img/kier.jpg" alt="John" style="width:100%">
+                        <img src="img/kier.jpg" alt="Kier" style="width:100%">
                         <div class="container">
                             <h2>Kier Tomino</h2>
                             <div class="social-icons team-social-icons">

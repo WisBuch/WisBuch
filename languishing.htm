@@ -18,7 +18,7 @@
       }
       body.dark-mode {
         background-color: #222;
-        color: #e6ccb2; /* Change text color for better readability */
+        color: #e6ccb2; 
       }
       .Education3 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular';
@@ -49,8 +49,8 @@
         display: flex;
         flex-direction: column;
         gap: 3px;
-        transition: top 0.3s; /* Smooth transition for button hide/show */
-        z-index: 1; /* Ensure it's behind h1 */
+        transition: top 0.3s; 
+        z-index: 1; 
       }
       .action-button {
         padding: 10px 20px;
@@ -74,33 +74,30 @@
         background-color: #e6ccb2;
         color: #000  ;
       }
-@media screen and (max-width: 768px) {
-    .action-buttons {
-        top: 1px;
-        right: 10px;
-    }
-    h1 {
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .action-buttons {
-        top: 1px;
-        right: 5px;
-    }
-    h1 {
-        margin-top: 20px;
-    }
-}
+          @media screen and (max-width: 768px) {
+              .action-buttons {
+                  top: 1px;
+                  right: 10px;
+              }
+              h1 {
+                  margin-top: 40px;
+              }
+          }
+          @media screen and (max-width: 480px) {
+              .action-buttons {
+                  top: 1px;
+                  right: 5px;
+              }
+              h1 {
+                  margin-top: 20px;
+              }
+          }
     </style>
 
 </head>
 <body>
-   <!-- Action Buttons -->
    <div class="action-buttons" id="actionButtons">
-       <!-- Dark Mode Toggle Button -->
        <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
-       <!-- Add to Library Button -->
        <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Languishing')">+</button>
    </div>
 
@@ -124,18 +121,14 @@
         <p>Emory University sociologist Corey Keyes has spent his career studying the causes and costs of languishing—the neglected middle child of mental health. Now Keyes has written the first definitive book on the subject, examining the ripple effect of languishing on our lives before deftly diagnosing the larger forces behind its rise: the false promises of the self-help industrial complex, a global moment of intense fear and loss, and a failing healthcare system focused on treating rather than preventing illness.</p><br>
         <p>Ultimately, Keyes presents a counterintuitive approach to breaking the cycles keeping us stuck and finding a path to true flourishing. Unlike self-improvement systems offering quick-fix mood boosts, his framework focuses on functioning well: taking simple but powerful steps to hold our emotions loosely, becoming more accepting of ourselves and others, and carving out daily moments for the activities that create cycles of meaning, connection, and personal growth.</p><br>
         <p> <i>Languishing</i> is a must-read for anyone tempted to downplay feelings of demotivation and emptiness as they struggle to haul themselves through the day, and for those eager to build a higher tolerance for adversity and the pressures of modern life. We can expand our vocabulary for describing our inner experiences and deepest needs—and, with it, our potential to flourish.</p><br>
-          
-        <!-- Add to Library Button -->
 </div>
 </div>
 
 <script>
-  // Function to toggle dark mode
   function toggleDarkMode() {
       var body = document.body;
       body.classList.toggle('dark-mode');
 
-      // Toggle button text based on mode
       var darkModeToggle = document.getElementById('darkModeToggle');
       if (body.classList.contains('dark-mode')) {
           darkModeToggle.textContent = ' ☀';
@@ -144,9 +137,7 @@
       }
   }
 
-  // Function to add a book to the library
   function addToLibrary(bookTitle) {
-      // Get existing library data from local storage
       var libraryData = localStorage.getItem('library');
 
       var library = [];
@@ -154,10 +145,9 @@
           library = JSON.parse(libraryData);
       }
 
-      // Check if the library has reached the maximum limit (10 books)
       if (library.length >= 10) {
           alert('You have reached the maximum limit of 10 books in your library.');
-          return; // Stop execution if the limit is reached
+          return; 
       }
 
       library.push(bookTitle);
@@ -177,7 +167,7 @@ if (window.pageYOffset === 0) {
     actionButtons.style.top = "10px";
     actionButtons.style.display = "flex";
 } else {
-    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.top = "-50px"; 
     actionButtons.style.display = "none";
 }
 }

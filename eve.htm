@@ -18,7 +18,7 @@
       }
       body.dark-mode {
         background-color: #222;
-        color: #e6ccb2; /* Change text color for better readability */
+        color: #e6ccb2; 
       }
       .Education4 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular';
@@ -49,8 +49,8 @@
         display: flex;
         flex-direction: column;
         gap: 3px;
-        transition: top 0.3s; /* Smooth transition for button hide/show */
-        z-index: 1; /* Ensure it's behind h1 */
+        transition: top 0.3s; 
+        z-index: 1; 
       }
       .action-button {
         padding: 10px 20px;
@@ -74,36 +74,32 @@
         background-color: #e6ccb2;
         color: #000  ;
       }
-@media screen and (max-width: 768px) {
-    .action-buttons {
-        top: 1px;
-        right: 10px;
-    }
-    h1 {
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .action-buttons {
-        top: 1px;
-        right: 5px;
-    }
-    h1 {
-        margin-top: 20px;
-    }
-}
+        @media screen and (max-width: 768px) {
+            .action-buttons {
+                top: 1px;
+                right: 10px;
+            }
+            h1 {
+                margin-top: 40px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .action-buttons {
+                top: 1px;
+                right: 5px;
+            }
+            h1 {
+                margin-top: 20px;
+            }
+        }
     </style>
 
 </head>
 <body>
-   <!-- Action Buttons -->
    <div class="action-buttons" id="actionButtons">
-       <!-- Dark Mode Toggle Button -->
        <button id="darkModeToggle" class="action-button" onclick="toggleDarkMode()"> ☽</button>
-       <!-- Add to Library Button -->
        <button id="addToLibraryButton" class="action-button" onclick="addToLibrary('Eve')">+</button>
    </div>
-
 
       <div class="Education4">
         <h1>Eve</h1> 
@@ -133,18 +129,14 @@
         <p>Prescriptions for pain medications, too, are considered sex neutral, despite consistent proof that some may be less effective for women. Women are more likely to die of heart attacks, even though they're less likely to have them-symptoms differ between the sexes, so women and their doctors alike fail to catch them in time. Anesthetics in surgery, treatments for Alzheimer's, even public education curricula suffer from the ill-conceived notion that women's bodies are just bodies in general-soft and fleshy, and missing a couple of significant nether bits, but otherwise, just the same as men's.</p><br>
           
         <p>And of course, nearly all of the studies that produced these findings include only cisgender subjects in the world of scientific research, there's been very little attention to what happens in the bodies of people assigned one or another sex at birth who then go on to identify differently. In part, that's because there's a massive difference between biological sex-something wound deep into the warp and weft of our physical development, from in- cell organelles all the way up to whole-body features, and built over billions of years of evolutionary history-and humanity's gender identity, which is a fluid thing and brain based and at most a few hundred thousand years old.</p><br>
-    
-        <!-- Add to Library Button -->
 </div>
 </div>
 
 <script>
-  // Function to toggle dark mode
   function toggleDarkMode() {
       var body = document.body;
       body.classList.toggle('dark-mode');
 
-      // Toggle button text based on mode
       var darkModeToggle = document.getElementById('darkModeToggle');
       if (body.classList.contains('dark-mode')) {
           darkModeToggle.textContent = ' ☀';
@@ -153,9 +145,7 @@
       }
   }
 
-  // Function to add a book to the library
   function addToLibrary(bookTitle) {
-      // Get existing library data from local storage
       var libraryData = localStorage.getItem('library');
 
       var library = [];
@@ -163,10 +153,9 @@
           library = JSON.parse(libraryData);
       }
 
-      // Check if the library has reached the maximum limit (10 books)
       if (library.length >= 10) {
           alert('You have reached the maximum limit of 10 books in your library.');
-          return; // Stop execution if the limit is reached
+          return;
       }
 
       library.push(bookTitle);
@@ -186,7 +175,7 @@ if (window.pageYOffset === 0) {
     actionButtons.style.top = "10px";
     actionButtons.style.display = "flex";
 } else {
-    actionButtons.style.top = "-50px"; // Adjust this value based on the button height
+    actionButtons.style.top = "-50px"; 
     actionButtons.style.display = "none";
 }
 }

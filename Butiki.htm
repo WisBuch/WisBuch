@@ -7,88 +7,88 @@
     <link rel="icon" href="img/E.jpg" type="image/x-icon">
 
     <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-      }
-      body{
-        background-color: #e6ccb2;
-        overflow-x: hidden;
-      }
-      body.dark-mode {
-        background-color: #222;
-        color: #e6ccb2; /* Change text color for better readability */
-      }
-      .kids5 {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular';
-        padding: 25px;
-        margin-top: 25px;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        text-align: justify;  
-      }
-      h1{
-        text-align: center;
-      }
-      h2{
-        text-align: center;
-      }
-      .first-letter {
-        font-size: 50px;
-        font-family: serif;
-        font-weight: bolder;
-      }
-      .action-buttons {
-        position: fixed;
-        top: 2px;
-        right: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        transition: top 0.3s; /* Smooth transition for button hide/show */
-        z-index: 1; /* Ensure it's behind h1 */
-      }
-      .action-button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      #darkModeToggle {
-        background-color: #000;
-        color: #e6ccb2;
-      }
-      #addToLibraryButton {
-        background-color: #000;
-        color: #e6ccb2  ;
-      }
-      body.dark-mode #darkModeToggle {
-        background-color: #e6ccb2;
-        color: #000;
-      }
-      body.dark-mode #addToLibraryButton {
-        background-color: #e6ccb2;
-        color: #000  ;
-      }
-@media screen and (max-width: 768px) {
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #e6ccb2;
+      overflow-x: hidden;
+    }
+    body.dark-mode {
+      background-color: #222;
+      color: #e6ccb2; /* Change text color for better readability */
+    }
+    .kids5 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular';
+      padding: 25px;
+      margin-top: 25px;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      text-align: justify;  
+    }
+    h1{
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+    }
+    .first-letter {
+      font-size: 50px;
+      font-family: serif;
+      font-weight: bolder;
+    }
     .action-buttons {
-        top: 1px;
-        right: 10px;
+      position: fixed;
+      top: 2px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      transition: top 0.3s; 
+      z-index: 1; 
     }
-    h1 {
-        margin-top: 40px;
+    .action-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-}
-@media screen and (max-width: 480px) {
-    .action-buttons {
-        top: 1px;
-        right: 5px;
+    #darkModeToggle {
+      background-color: #000;
+      color: #e6ccb2;
     }
-    h1 {
-        margin-top: 20px;
+    #addToLibraryButton {
+      background-color: #000;
+      color: #e6ccb2  ;
     }
-}
+    body.dark-mode #darkModeToggle {
+      background-color: #e6ccb2;
+      color: #000;
+    }
+    body.dark-mode #addToLibraryButton {
+      background-color: #e6ccb2;
+      color: #000  ;
+    }
+      @media screen and (max-width: 768px) {
+          .action-buttons {
+              top: 1px;
+              right: 10px;
+          }
+          h1 {
+              margin-top: 40px;
+          }
+    }
+      @media screen and (max-width: 480px) {
+          .action-buttons {
+              top: 1px;
+              right: 5px;
+          }
+          h1 {
+              margin-top: 20px;
+          }
+      }
     </style>
 
 </head>
@@ -145,19 +145,14 @@
         
         <p>Patuloy pa rin ang paghalik ng butiki sa lupa tuwing dapithapon. Panahon na lang ang hahatol kung nararapat na ngang ibalik sa dating anyo si Kiko. 
            Para sa mga duwende, mabuti nang manatili itong butiki sa habang panahon. (HOY! BATA, GUSTO MO MAGING BUTIKI?)</p>
-
-
-      <!-- Add to Library Button -->
 </div>
     </div>
 
     <script>
-      // Function to toggle dark mode
       function toggleDarkMode() {
           var body = document.body;
           body.classList.toggle('dark-mode');
 
-          // Toggle button text based on mode
           var darkModeToggle = document.getElementById('darkModeToggle');
           if (body.classList.contains('dark-mode')) {
               darkModeToggle.textContent = ' ☀';
@@ -166,22 +161,17 @@
           }
       }
 
-      // Function to add a book to the library
       function addToLibrary(bookTitle) {
-          // Get existing library data from local storage
           var libraryData = localStorage.getItem('library');
 
           var library = [];
           if (libraryData) {
               library = JSON.parse(libraryData);
           }
-
-          // Check if the library has reached the maximum limit (10 books)
           if (library.length >= 10) {
               alert('You have reached the maximum limit of 10 books in your library.');
-              return; // Stop execution if the limit is reached
+              return; 
           }
-
           library.push(bookTitle);
 
           localStorage.setItem('library', JSON.stringify(library));
@@ -194,15 +184,15 @@
       var prevScrollPos = window.pageYOffset;
       var actionButtons = document.getElementById("actionButtons");
 
-window.onscroll = function() {
-    if (window.pageYOffset === 0) {
-        actionButtons.style.top = "10px";
-        actionButtons.style.display = "flex";
-    } else {
-        actionButtons.style.top = "-50px"; // Adjust this value based on the button height
-        actionButtons.style.display = "none";
-    }
-}
+      window.onscroll = function() {
+          if (window.pageYOffset === 0) {
+              actionButtons.style.top = "10px";
+              actionButtons.style.display = "flex";
+          } else {
+              actionButtons.style.top = "-50px"; 
+              actionButtons.style.display = "none";
+          }
+      }
   </script>
 </body>
 </html>
